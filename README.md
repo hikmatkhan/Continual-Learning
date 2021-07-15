@@ -1,6 +1,6 @@
 # Continual-Learning
 
 ## Outlines
--One
--Two
--Three
+- One
+- Two
+- Three
