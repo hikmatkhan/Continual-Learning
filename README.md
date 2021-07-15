@@ -1,3 +1,6 @@
 # Continual-Learning
 
-# Outlines
+## Outlines
+-One
+-Two
+-Three
