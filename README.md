@@ -27,7 +27,7 @@
 
 ## Classics 
 -[Catastrophic forgetting in connectionist networks](https://www.sciencedirect.com/science/article/pii/S1364661399012942), (1999) by French, Robert M.
--[Lifelong robot learning](https://www.sciencedirect.com/science/article/pii/092188909500004Y),(1995) Sebastian ThrunaTom, M.Mitchellb
+-[Lifelong robot learning](https://www.sciencedirect.com/science/article/pii/092188909500004Y), (1995) Sebastian ThrunaTom, M.Mitchellb.
 ## Empirical Study 
 ## Surveys 
 ## Influentials 
