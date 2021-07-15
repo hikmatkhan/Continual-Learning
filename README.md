@@ -26,7 +26,7 @@
 </br>
 
 ## Classics 
---[Catastrophic forgetting in connectionist networks](https://www.sciencedirect.com/science/article/pii/S1364661399012942), (1999) by French, Robert M.
+-[Catastrophic forgetting in connectionist networks](https://www.sciencedirect.com/science/article/pii/S1364661399012942), (1999) by French, Robert M.
 ## Empirical Study 
 ## Surveys 
 ## Influentials 
