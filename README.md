@@ -62,4 +62,5 @@
 - we now generate and investigate video sequences in three distinct set-ups: incremental class appearance, varying weather conditions and decreasing illumination intensity.
 - ![Benchmark](/Images/b2.png?raw=true)
 - ![Benchmark](/Images/b3.png?raw=true)
+- ![Benchmark](/Images/b4.png?raw=true)
 
