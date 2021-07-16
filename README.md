@@ -48,4 +48,4 @@
 ## Libraries 
 ## Workshops
 ## Benchmarks
-- [A Procedural World Generation Framework for Systematic Evaluation of Continual Learning], (2021) Hess, Timm, Martin Mundt, Iuliia Pliushch, and Visvanathan Ramesh.
+- [A Procedural World Generation Framework for Systematic Evaluation of Continual Learning](https://arxiv.org/abs/2106.02585), (2021) Hess, Timm, Martin Mundt, Iuliia Pliushch, and Visvanathan Ramesh.
