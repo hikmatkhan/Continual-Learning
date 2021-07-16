@@ -15,6 +15,7 @@
 - Methods Dynamic Architectures or Routing Methods
 - Hybrid Methods
 - Continual Few-Shot Learning 
+- Meta Learning 
 - Meta-Continual Learning 
 - Lifelong Reinforcement Learning 
 - Continual Generative Modeling 
@@ -40,6 +41,8 @@
 ## Methods Dynamic Architectures or Routing Methods
 ## Hybrid Methods
 ## Continual Few-Shot Learning 
+## Meta Learning 
+- [Rapid learning or feature reuse? towards understanding the effectiveness of maml](https://arxiv.org/pdf/1909.09157.pdf) ICLR (2020) Raghu, A., Raghu, M., Bengio, S., & Vinyals.
 ## Meta-Continual Learning 
 ## Lifelong Reinforcement Learning 
 ## Continual Generative Modeling 
