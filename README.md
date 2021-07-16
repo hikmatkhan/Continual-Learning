@@ -22,6 +22,7 @@
 - Thesis 
 - Libraries 
 - Workshops
+- Benchmarks
 
 </br>
 
@@ -46,3 +47,5 @@
 ## Thesis 
 ## Libraries 
 ## Workshops
+## Benchmarks
+- [A Procedural World Generation Framework for Systematic Evaluation of Continual Learning], (2021) Hess, Timm, Martin Mundt, Iuliia Pliushch, and Visvanathan Ramesh.
