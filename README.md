@@ -47,7 +47,7 @@
 - > Main Contributions: We perform layer freezing experiments and latent representational analysis of MAML, finding that feature reuse is the predominant reason for efficient learning.
 - > Based on these results, we propose the ANIL (Almost No Inner Loop) algorithm, a significant simplification to MAML that removes the inner loop updates for all but the head (final layer) of a neural network during training and inference.
 - > We study the effect of the head of the network, finding that once training is complete, the head can be removed, and the representations can be used without adaptation to perform unseen tasks, which we call the No Inner Loop (NIL) algorithm.
-- 
+- ![Benchmark](/Images/I1.png?raw=true)
 ## Meta-Continual Learning 
 ## Lifelong Reinforcement Learning 
 ## Continual Generative Modeling 
