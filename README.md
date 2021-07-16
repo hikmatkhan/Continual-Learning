@@ -43,6 +43,7 @@
 ## Continual Few-Shot Learning 
 ## Meta Learning 
 - [Rapid learning or feature reuse? towards understanding the effectiveness of maml](https://arxiv.org/pdf/1909.09157.pdf) ICLR (2020) Raghu, A., Raghu, M., Bengio, S., & Vinyals.
+- > Despite MAML’s popu- larity, a fundamental open question remains – is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta-initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification ofMAML where we remove the inner loop for all but the (task-specific) head of the underlying neural network.
 ## Meta-Continual Learning 
 ## Lifelong Reinforcement Learning 
 ## Continual Generative Modeling 
