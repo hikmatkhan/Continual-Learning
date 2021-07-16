@@ -60,4 +60,6 @@
 - Corroborate our simulator’s utility in an initial showcase of multiple continual learning techniques, investigated across incremental class, environmental lighting, and weather scenarios.
 - Provide open access to: 1. As a benchmark creation tool, a stand-alone simulator executable with configuration files for the specification of rendered sequences: https://doi.org/10.5281/zenodo.4899294 2. To allow extensions, the underlying source-code of the simulator: https://github.com/ccc-frankfurt/EndlessCL-Simulator-Source 3. A set of respective videos and their precise dataset versions to reproduce the particular experiments of this paper: https://doi.org/10.5281/zenodo.4899267.
 - we now generate and investigate video sequences in three distinct set-ups: incremental class appearance, varying weather conditions and decreasing illumination intensity.
+- ![Benchmark](/Images/b2.png?raw=true)
+- ![Benchmark](/Images/b3.png?raw=true)
 
