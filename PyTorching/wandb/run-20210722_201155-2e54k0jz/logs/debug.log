@@ -1,0 +1,56 @@
+2021-07-22 20:11:55,985 INFO    MainThread:2597692 [wandb_setup.py:_flush():70] setting env: {}
+2021-07-22 20:11:55,985 INFO    MainThread:2597692 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-07-22 20:11:55,985 INFO    MainThread:2597692 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-07-22 20:11:55,985 INFO    MainThread:2597692 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa14806c690>
+2021-07-22 20:11:55,986 INFO    MainThread:2597692 [wandb_init.py:_log_setup():318] Logging user logs to /home/khanhi83/JWorkspace/Continual-Learning/PyTorching/wandb/run-20210722_201155-2e54k0jz/logs/debug.log
+2021-07-22 20:11:55,986 INFO    MainThread:2597692 [wandb_init.py:_log_setup():319] Logging internal logs to /home/khanhi83/JWorkspace/Continual-Learning/PyTorching/wandb/run-20210722_201155-2e54k0jz/logs/debug-internal.log
+2021-07-22 20:11:59,188 INFO    MainThread:2597692 [wandb_run.py:_console_start():1308] atexit reg
+2021-07-22 20:11:59,188 INFO    MainThread:2597692 [wandb_run.py:_redirect():1175] redirect: SettingsConsole.WRAP
+2021-07-22 20:11:59,189 INFO    MainThread:2597692 [wandb_run.py:_redirect():1206] Wrapping output streams.
+2021-07-22 20:11:59,189 INFO    MainThread:2597692 [wandb_run.py:_redirect():1222] Redirects installed.
+2021-07-22 20:11:59,192 INFO    MainThread:2597692 [wandb_init.py:_pause_backend():239] pausing backend
+2021-07-22 20:12:24,012 INFO    MainThread:2597692 [wandb_init.py:_resume_backend():244] resuming backend
+2021-07-22 20:12:24,014 INFO    MainThread:2597692 [wandb_config.py:__setitem__():142] config set batch_size = 32 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa0ce1de450>>
+2021-07-22 20:12:24,014 INFO    MainThread:2597692 [wandb_run.py:_config_callback():608] config_cb batch_size 32 None
+2021-07-22 20:12:24,014 INFO    MainThread:2597692 [wandb_config.py:__setitem__():142] config set epoches = 10 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa0ce1de450>>
+2021-07-22 20:12:24,015 INFO    MainThread:2597692 [wandb_run.py:_config_callback():608] config_cb epoches 10 None
+2021-07-22 20:12:24,015 INFO    MainThread:2597692 [wandb_config.py:__setitem__():142] config set learning_rate = 0.01 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fa0ce1de450>>
+2021-07-22 20:12:24,016 INFO    MainThread:2597692 [wandb_run.py:_config_callback():608] config_cb learning_rate 0.01 None
+2021-07-22 20:12:24,016 INFO    MainThread:2597692 [wandb_init.py:_pause_backend():239] pausing backend
+2021-07-22 20:12:27,532 INFO    MainThread:2597692 [wandb_init.py:_resume_backend():244] resuming backend
+2021-07-22 20:12:27,800 INFO    MainThread:2597692 [wandb_init.py:_pause_backend():239] pausing backend
+2021-07-22 20:12:32,390 INFO    MainThread:2597692 [wandb_init.py:_resume_backend():244] resuming backend
+2021-07-22 20:12:32,488 INFO    MainThread:2597692 [wandb_init.py:_pause_backend():239] pausing backend
+2021-07-23 08:37:10,447 INFO    MainThread:2597692 [wandb_run.py:_atexit_cleanup():1278] got exitcode: 0
+2021-07-23 08:37:10,449 INFO    MainThread:2597692 [wandb_run.py:_restore():1250] restore
+2021-07-23 08:37:10,572 INFO    MainThread:2597692 [wandb_run.py:_wait_for_finish():1395] got exit ret: uuid: "6abb75d04a0540849829b976af19b1cc"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 874
+      total_bytes: 874
+    }
+  }
+}
+
+2021-07-23 08:37:12,585 INFO    MainThread:2597692 [wandb_run.py:_wait_for_finish():1395] got exit ret: uuid: "bab468b43e62433ab361cdbc38b8e47b"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4571
+      total_bytes: 4571
+    }
+  }
+}
+
+2021-07-23 08:37:13,982 INFO    MainThread:2597692 [wandb_run.py:_show_files():1614] logging synced files
+2021-07-23 08:37:13,990 INFO    MainThread:2597692 [internal.py:handle_exit():139] Internal process exited

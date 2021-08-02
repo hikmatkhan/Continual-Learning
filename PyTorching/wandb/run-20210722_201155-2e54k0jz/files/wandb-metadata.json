@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.4.0-48-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.6",
+    "heartbeatAt": "2021-07-23T00:11:59.126718",
+    "startedAt": "2021-07-23T00:11:55.981168",
+    "docker": null,
+    "gpu": "TITAN RTX",
+    "gpu_count": 8,
+    "cpu_count": 64,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/khanhi83/.local/share/jupyter/runtime/kernel-19d9e012-706f-4218-a1b0-04cf4be3ea2e.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/hikmatkhan/Continual-Learning.git",
+        "commit": "5662a0176710be2ca437818929be142b3f9bd42d"
+    },
+    "email": "hikmat.khan179@gmail.com",
+    "root": "/home/khanhi83/JWorkspace/Continual-Learning",
+    "host": "lambda01",
+    "username": "khanhi83",
+    "executable": "/home/khanhi83/anaconda3/envs/PY3/bin/python"
+}
