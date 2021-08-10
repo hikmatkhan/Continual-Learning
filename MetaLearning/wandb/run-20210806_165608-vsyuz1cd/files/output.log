@@ -1,0 +1,14 @@
+
+Namespace(adaptation_steps=1, data='./data', dataset='mini-imagenet', device=device(type='cuda'), fast_lr=0.01, fine_tune=False, first_order=False, input=32, meta_lr=0.001, model='maml', num_epochs=500000, num_steps=1, num_tasks=32, num_workers=1, shots=1, use_cuda=False, username='hikmatkhan', verbose=False, wand_project='Github_Rapo', wandb_logging=True, ways=5)
+[Epoch 0.00] Spt Train Loss: 4.19  Qry Train Loss:5.02 Spt Val Loss:4.14  Qry Val Loss:5.81 Spt Test Loss:4.36  Qry Test Loss:5.00
+[Epoch 4.00] Spt Train Loss: 30.81  Qry Train Loss:19.66 Spt Val Loss:31.08  Qry Val Loss:21.87 Spt Test Loss:32.43  Qry Test Loss:21.87
+[Epoch 8.00] Spt Train Loss: 29.22  Qry Train Loss:24.45 Spt Val Loss:31.25  Qry Val Loss:20.69 Spt Test Loss:30.69  Qry Test Loss:24.87
+[Epoch 12.00] Spt Train Loss: 29.23  Qry Train Loss:16.26 Spt Val Loss:31.80  Qry Val Loss:16.06 Spt Test Loss:28.66  Qry Test Loss:21.39
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 250, in <module>
+    meta_optimizer=meta_optimizer)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 134, in train_on_task
+    meta_optimizer.step()
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/optim/adam.py", line 64, in step
+    grad = p.grad.data
+KeyboardInterrupt

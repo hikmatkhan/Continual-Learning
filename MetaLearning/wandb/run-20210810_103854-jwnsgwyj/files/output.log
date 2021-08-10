@@ -1,0 +1,25 @@
+Namespace(adaptation_steps=1, data='./data', dataset='omniglot', device=device(type='cuda'), fast_lr=0.01, fine_tune=False, first_order=False, input=32, meta_lr=0.001, model='maml', num_epochs=500000, num_steps=1, num_tasks=32, num_workers=1, shots=1, use_cuda=False, username='hikmatkhan', verbose=False, wand_project='Github_Rapo', wandb_logging=False, ways=5)
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 252, in <module>
+    meta_optimizer=meta_optimizer)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 124, in train_on_task
+    y_spt = theta_pi(X[meta_train_indices])
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 460, in _patched_forward
+    output = self.boxed_forward(*args, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 387, in patched_forward
+    return true_forward(self, *args, **kwargs)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/maml.py", line 26, in forward
+    return self.module(x)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 387, in patched_forward
+    return true_forward(self, *args, **kwargs)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/models/lenet.py", line 39, in forward
+    x = self.features(x)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/models/lenet.py", line 31, in features
+    x = self.linear(x.view(-1, self.n_feat))
+RuntimeError: shape '[-1, 3200]' is invalid for input of size 12250

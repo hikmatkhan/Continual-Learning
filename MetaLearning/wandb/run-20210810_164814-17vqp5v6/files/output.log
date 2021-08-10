@@ -1,0 +1,12 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher_Copy.py", line 292, in <module>
+    tasksets=tasksets)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher_Copy.py", line 161, in val_on_task
+    diff_optim.step(spt_loss)  # After this call. There will be next version of the theta
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/optim.py", line 249, in step
+    self._update(grouped_grads)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/optim.py", line 349, in _update
+    (exp_avg_sq * beta2) + (1 - beta2) * g * g
+KeyboardInterrupt

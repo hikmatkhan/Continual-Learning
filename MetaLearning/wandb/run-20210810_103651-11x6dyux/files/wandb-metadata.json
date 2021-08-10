@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.4.0-174-generic-x86_64-with-debian-stretch-sid",
+    "python": "3.6.10",
+    "heartbeatAt": "2021-08-10T14:36:56.635817",
+    "startedAt": "2021-08-10T14:36:51.222019",
+    "docker": null,
+    "gpu": "Quadro P5000",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "running",
+    "program": "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py",
+    "codePath": "MetaLearning/MetaLearningHigher.py",
+    "git": {
+        "remote": "https://github.com/hikmatkhan/Continual-Learning",
+        "commit": "fe201ac591b00dd12c1fcf11f74cccf1ede27bd1"
+    },
+    "email": "[khanhi83@students.rowan.edu]",
+    "root": "/home/hikmat/Desktop/JWorkSpace/Continual-Learning",
+    "host": "Hikmat",
+    "username": "hikmat",
+    "executable": "/home/hikmat/anaconda3/envs/PY3/bin/python"
+}

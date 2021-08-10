@@ -1,0 +1,32 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 262, in <module>
+    adapt_optimizer=diff_optim)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 126, in train_on_task
+    y_spt = theta_pi(X[meta_train_indices])
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 460, in _patched_forward
+    output = self.boxed_forward(*args, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 387, in patched_forward
+    return true_forward(self, *args, **kwargs)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/maml.py", line 26, in forward
+    return self.module(x)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 387, in patched_forward
+    return true_forward(self, *args, **kwargs)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/models/lenet.py", line 40, in forward
+    x = self.logits(x)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/models/lenet.py", line 35, in logits
+    x = self.last(x)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 387, in patched_forward
+    return true_forward(self, *args, **kwargs)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/nn/functional.py", line 1370, in linear
+    ret = torch.addmm(bias, input, weight.t())
+KeyboardInterrupt

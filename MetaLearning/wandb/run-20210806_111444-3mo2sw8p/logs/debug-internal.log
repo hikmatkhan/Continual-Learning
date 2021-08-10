@@ -1,0 +1,609 @@
+2021-08-06 11:14:45,391 INFO    MainThread:190723 [internal.py:wandb_internal():91] W&B internal server running at pid: 190723, started at: 2021-08-06 11:14:45.391765
+2021-08-06 11:14:45,394 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: check_version
+2021-08-06 11:14:45,394 INFO    WriterThread:190723 [datastore.py:open_for_write():80] open: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/run-3mo2sw8p.wandb
+2021-08-06 11:14:45,678 DEBUG   SenderThread:190723 [sender.py:send():179] send: header
+2021-08-06 11:14:45,678 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: check_version
+2021-08-06 11:14:45,935 DEBUG   SenderThread:190723 [sender.py:send():179] send: run
+2021-08-06 11:14:46,186 INFO    SenderThread:190723 [dir_watcher.py:__init__():168] watching files in: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files
+2021-08-06 11:14:46,190 INFO    SenderThread:190723 [sender.py:_start_run_threads():719] run started: 3mo2sw8p with start time 1628262884
+2021-08-06 11:14:46,191 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:14:46,191 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: run_start
+2021-08-06 11:14:46,192 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:14:47,192 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_created():216] file/dir created: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:14:47,543 DEBUG   HandlerThread:190723 [meta.py:__init__():34] meta init
+2021-08-06 11:14:47,543 DEBUG   HandlerThread:190723 [meta.py:__init__():48] meta init done
+2021-08-06 11:14:47,543 DEBUG   HandlerThread:190723 [meta.py:probe():205] probe
+2021-08-06 11:14:47,549 DEBUG   HandlerThread:190723 [meta.py:_setup_git():195] setup git
+2021-08-06 11:14:47,576 DEBUG   HandlerThread:190723 [meta.py:_setup_git():202] setup git done
+2021-08-06 11:14:47,576 DEBUG   HandlerThread:190723 [meta.py:_save_pip():52] save pip
+2021-08-06 11:14:47,577 DEBUG   HandlerThread:190723 [meta.py:_save_pip():66] save pip done
+2021-08-06 11:14:47,577 DEBUG   HandlerThread:190723 [meta.py:_save_conda():73] save conda
+2021-08-06 11:14:48,190 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_created():216] file/dir created: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/conda-environment.yaml
+2021-08-06 11:14:48,190 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_created():216] file/dir created: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/requirements.txt
+2021-08-06 11:14:52,192 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/conda-environment.yaml
+2021-08-06 11:14:52,192 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_created():216] file/dir created: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:14:52,369 DEBUG   HandlerThread:190723 [meta.py:_save_conda():81] save conda done
+2021-08-06 11:14:52,369 DEBUG   HandlerThread:190723 [meta.py:probe():247] probe done
+2021-08-06 11:14:52,373 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:14:52,374 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:14:52,451 DEBUG   SenderThread:190723 [sender.py:send():179] send: files
+2021-08-06 11:14:52,452 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-metadata.json with policy now
+2021-08-06 11:14:53,009 INFO    Thread-11 :190723 [upload_job.py:push():137] Uploaded file /tmp/tmp812w5y2twandb/3osz28pw-wandb-metadata.json
+2021-08-06 11:14:53,193 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_created():216] file/dir created: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-metadata.json
+2021-08-06 11:14:55,194 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:15:08,332 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:08,332 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:08,334 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:09,201 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:09,925 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:15:09,925 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:15:10,201 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:15:15,983 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:15:16,844 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:16,845 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:16,845 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:17,205 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:25,023 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:15:25,024 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:15:25,276 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:25,276 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:25,278 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:26,209 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:33,791 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:33,791 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:33,792 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:34,214 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:40,102 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:15:40,102 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:15:42,272 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:42,272 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:42,274 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:43,218 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:44,219 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:15:46,392 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:15:50,834 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:50,835 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:50,836 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:51,222 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:15:55,178 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:15:55,179 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:15:59,087 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:15:59,088 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:15:59,092 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:15:59,226 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:06,601 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:06,602 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:06,603 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:07,230 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:10,297 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:16:10,298 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:16:14,006 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:14,007 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:14,011 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:14,234 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:16,235 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:16:16,808 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:16:21,480 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:21,481 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:21,481 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:22,238 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:25,375 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:16:25,376 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:16:29,006 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:29,007 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:29,009 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:29,242 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:36,448 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:36,449 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:36,449 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:37,246 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:40,509 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:16:40,509 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:16:43,985 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:43,985 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:43,987 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:44,249 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:46,250 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:16:47,225 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:16:52,067 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:16:52,067 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:16:52,068 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:16:52,253 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:16:55,585 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:16:55,585 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:17:00,670 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:00,671 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:00,675 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:01,258 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:09,357 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:09,357 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:09,358 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:10,262 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:10,742 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:17:10,742 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:17:17,645 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:17:18,006 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:18,006 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:18,007 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:18,266 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:20,267 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:17:25,830 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:17:25,830 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:17:26,441 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:26,441 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:26,442 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:27,271 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:35,021 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:35,022 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:35,026 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:35,275 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:40,921 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:17:40,921 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:17:43,541 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:43,542 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:43,542 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:44,279 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:48,057 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:17:52,097 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:17:52,097 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:17:52,098 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:17:52,283 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:17:54,285 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:17:56,896 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:17:56,896 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:18:00,778 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:00,778 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:00,780 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:01,288 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:09,254 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:09,254 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:09,255 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:09,292 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:11,972 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:18:11,972 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:18:18,044 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:18,045 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:18,046 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:18,297 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:18,478 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:18:25,680 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:25,680 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:25,681 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:26,301 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:18:26,301 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:27,054 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:18:27,055 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:18:33,343 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:33,344 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:33,345 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:34,304 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:41,526 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:41,527 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:41,527 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:42,157 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:18:42,158 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:18:42,308 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:48,893 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:18:49,985 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:49,986 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:49,986 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:50,312 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:18:57,234 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:18:57,235 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:18:58,470 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:18:58,471 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:18:58,472 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:18:59,317 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:00,318 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:19:06,856 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:06,856 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:06,857 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:07,321 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:12,317 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:19:12,317 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:19:15,310 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:15,311 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:15,315 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:15,325 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:19,296 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:19:23,952 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:23,953 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:23,953 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:24,329 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:27,416 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:19:27,416 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:19:32,844 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:32,845 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:32,849 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:33,334 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:34,334 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:19:41,431 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:41,431 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:41,432 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:42,338 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:42,505 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:19:42,506 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:19:49,474 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:49,475 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:49,476 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:49,696 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:19:50,342 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:19:57,619 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:19:57,620 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:19:58,050 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:19:58,051 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:19:58,052 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:19:58,346 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:06,823 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:06,824 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:06,827 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:07,350 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:08,351 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:20:12,700 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:20:12,701 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:20:15,506 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:15,507 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:15,509 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:16,355 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:20,107 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:20:23,459 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:23,460 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:23,461 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:24,359 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:27,777 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:20:27,777 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:20:31,123 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:31,123 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:31,124 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:31,362 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:39,625 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:39,625 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:39,630 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:40,367 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:20:40,367 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:42,862 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:20:42,862 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:20:48,451 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:48,451 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:48,452 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:49,371 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:50,517 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:20:57,099 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:20:57,100 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:20:57,100 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:20:57,375 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:20:57,943 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:20:57,943 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:21:06,057 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:06,057 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:06,058 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:06,379 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:13,092 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:21:13,092 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:21:14,832 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:14,832 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:14,836 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:15,383 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:17,384 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:21:20,934 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:21:23,823 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:23,824 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:23,824 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:24,388 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:28,174 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:21:28,174 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:21:32,334 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:32,335 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:32,335 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:32,392 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:40,924 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:40,924 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:40,925 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:41,396 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:43,309 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:21:43,309 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:21:49,520 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:49,520 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:49,525 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:50,400 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:21:51,355 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:21:51,401 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:21:58,185 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:21:58,186 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:21:58,186 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:21:58,387 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:21:58,388 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:21:58,404 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:06,540 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:06,540 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:06,541 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:07,408 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:13,507 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:22:13,508 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:22:15,416 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:15,416 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:15,417 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:15,418 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:21,771 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:22:24,250 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:24,251 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:24,252 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:24,423 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:25,423 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:22:28,663 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:22:28,663 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:22:33,037 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:33,037 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:33,038 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:33,427 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:41,732 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:41,732 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:41,733 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:42,431 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:43,738 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:22:43,739 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:22:50,550 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:50,551 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:50,552 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:51,436 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:22:52,193 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:22:58,607 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:22:58,607 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:22:58,608 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:22:58,916 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:22:58,917 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:22:59,439 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:01,441 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:23:07,420 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:07,422 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:07,422 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:07,443 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:14,029 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:23:14,030 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:23:16,129 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:16,129 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:16,130 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:16,448 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:22,595 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:23:24,767 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:24,768 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:24,769 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:25,452 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:29,182 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:23:29,182 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:23:33,531 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:33,532 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:33,533 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:34,456 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:35,457 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:23:42,178 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:42,178 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:42,179 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:42,460 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:44,261 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:23:44,261 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:23:50,748 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:50,749 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:50,749 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:51,465 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:23:53,022 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:23:59,366 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:23:59,366 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:23:59,367 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:23:59,393 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:23:59,393 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:23:59,469 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:07,918 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:07,919 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:07,919 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:08,472 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:09,473 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:24:14,563 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:24:14,564 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:24:16,449 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:16,450 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:16,450 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:16,476 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:23,440 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:24:25,165 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:25,166 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:25,167 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:25,481 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:29,702 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:24:29,703 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:24:33,835 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:33,836 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:33,836 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:34,484 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:42,025 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:42,026 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:42,026 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:42,488 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:43,489 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:24:44,860 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:24:44,860 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:24:50,982 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:50,982 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:50,983 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:51,493 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:24:53,858 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:24:59,355 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:24:59,356 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:24:59,357 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:24:59,497 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:00,015 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:25:00,015 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:25:07,082 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:07,083 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:07,084 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:07,501 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:15,164 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:25:15,164 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:25:15,358 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:15,359 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:15,359 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:15,505 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:17,505 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:25:24,011 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:24,011 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:24,016 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:24,269 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:25:24,509 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:30,240 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:25:30,240 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:25:32,440 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:32,441 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:32,442 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:32,513 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:40,975 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:40,975 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:40,976 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:41,517 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:45,321 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:25:45,321 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:25:49,424 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:49,424 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:49,425 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:49,520 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:25:51,521 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:25:54,680 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:25:57,712 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:25:57,713 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:25:57,714 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:25:58,525 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:00,449 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:26:00,450 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:26:06,266 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:06,266 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:06,267 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:06,529 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:14,747 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:14,748 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:14,748 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:15,533 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:15,588 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:26:15,589 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:26:23,118 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:23,118 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:23,119 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:23,537 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:26:23,538 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:25,095 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:26:30,735 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:26:30,736 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:26:31,515 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:31,516 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:31,517 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:31,541 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:40,068 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:40,069 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:40,070 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:40,546 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:45,818 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 11:26:45,818 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 11:26:48,359 DEBUG   SenderThread:190723 [sender.py:send():179] send: history
+2021-08-06 11:26:48,359 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:48,360 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:48,550 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:53,057 WARNING MainThread:190723 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2021-08-06 11:26:55,298 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:55,298 DEBUG   SenderThread:190723 [sender.py:send():179] send: telemetry
+2021-08-06 11:26:55,299 DEBUG   SenderThread:190723 [sender.py:send():179] send: exit
+2021-08-06 11:26:55,299 INFO    SenderThread:190723 [sender.py:send_exit():287] handling exit code: 255
+2021-08-06 11:26:55,301 INFO    SenderThread:190723 [sender.py:send_exit():295] send defer
+2021-08-06 11:26:55,301 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:55,302 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,302 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 0
+2021-08-06 11:26:55,303 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,303 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 0
+2021-08-06 11:26:55,303 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 1
+2021-08-06 11:26:55,303 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,304 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 1
+2021-08-06 11:26:55,402 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,403 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 1
+2021-08-06 11:26:55,403 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 2
+2021-08-06 11:26:55,403 DEBUG   SenderThread:190723 [sender.py:send():179] send: stats
+2021-08-06 11:26:55,404 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,405 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 2
+2021-08-06 11:26:55,405 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,405 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 2
+2021-08-06 11:26:55,405 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 3
+2021-08-06 11:26:55,406 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:55,409 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:55,411 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,411 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 3
+2021-08-06 11:26:55,411 DEBUG   SenderThread:190723 [sender.py:send():179] send: summary
+2021-08-06 11:26:55,412 INFO    SenderThread:190723 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 11:26:55,413 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,413 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 3
+2021-08-06 11:26:55,413 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 4
+2021-08-06 11:26:55,413 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,413 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 4
+2021-08-06 11:26:55,414 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,414 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 4
+2021-08-06 11:26:55,512 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:55,553 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:26:55,553 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:55,654 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 5
+2021-08-06 11:26:55,654 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:55,655 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:55,655 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 5
+2021-08-06 11:26:55,655 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:55,655 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 5
+2021-08-06 11:26:55,656 INFO    SenderThread:190723 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-08-06 11:26:55,756 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:56,554 INFO    Thread-8  :190723 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/config.yaml
+2021-08-06 11:26:56,555 INFO    SenderThread:190723 [dir_watcher.py:finish():312] scan: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files
+2021-08-06 11:26:56,555 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/requirements.txt requirements.txt
+2021-08-06 11:26:56,555 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log output.log
+2021-08-06 11:26:56,556 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/conda-environment.yaml conda-environment.yaml
+2021-08-06 11:26:56,565 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/config.yaml config.yaml
+2021-08-06 11:26:56,687 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-metadata.json wandb-metadata.json
+2021-08-06 11:26:56,688 INFO    SenderThread:190723 [dir_watcher.py:finish():318] scan save: /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json wandb-summary.json
+2021-08-06 11:26:56,701 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 6
+2021-08-06 11:26:56,702 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:56,709 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:56,717 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 6
+2021-08-06 11:26:56,717 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:56,718 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 6
+2021-08-06 11:26:56,718 INFO    SenderThread:190723 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-06 11:26:56,808 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:56,808 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:56,911 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:56,911 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,014 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,014 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,117 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,117 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,145 INFO    Thread-12 :190723 [upload_job.py:push():137] Uploaded file /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/requirements.txt
+2021-08-06 11:26:57,169 INFO    Thread-13 :190723 [upload_job.py:push():137] Uploaded file /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/output.log
+2021-08-06 11:26:57,205 INFO    Thread-15 :190723 [upload_job.py:push():137] Uploaded file /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/config.yaml
+2021-08-06 11:26:57,220 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,220 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,290 INFO    Thread-16 :190723 [upload_job.py:push():137] Uploaded file /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/wandb-summary.json
+2021-08-06 11:26:57,322 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,323 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,412 INFO    Thread-14 :190723 [upload_job.py:push():137] Uploaded file /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111444-3mo2sw8p/files/conda-environment.yaml
+2021-08-06 11:26:57,425 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,425 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,528 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,528 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,613 INFO    Thread-7  :190723 [sender.py:transition_state():308] send defer: 7
+2021-08-06 11:26:57,614 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:57,614 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 7
+2021-08-06 11:26:57,614 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:57,615 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 7
+2021-08-06 11:26:57,630 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-06 11:26:57,835 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 8
+2021-08-06 11:26:57,836 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: poll_exit
+2021-08-06 11:26:57,837 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:57,837 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 8
+2021-08-06 11:26:57,837 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:57,837 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 8
+2021-08-06 11:26:57,837 INFO    SenderThread:190723 [sender.py:transition_state():308] send defer: 9
+2021-08-06 11:26:57,838 DEBUG   HandlerThread:190723 [handler.py:handle_request():124] handle_request: defer
+2021-08-06 11:26:57,839 DEBUG   SenderThread:190723 [sender.py:send():179] send: final
+2021-08-06 11:26:57,839 INFO    HandlerThread:190723 [handler.py:handle_request_defer():141] handle defer: 9
+2021-08-06 11:26:57,839 DEBUG   SenderThread:190723 [sender.py:send():179] send: footer
+2021-08-06 11:26:57,839 DEBUG   SenderThread:190723 [sender.py:send_request():193] send_request: defer
+2021-08-06 11:26:57,839 INFO    SenderThread:190723 [sender.py:send_request_defer():304] handle sender defer: 9

@@ -1,11 +1,12 @@
 import torch
 import torch.nn as nn
 
+
 class LeNet(nn.Module):
 
     def __init__(self, out_dim=10, in_channel=1, img_sz=32):
         super(LeNet, self).__init__()
-        feat_map_sz = img_sz//4
+        feat_map_sz = img_sz // 4
         self.n_feat = 50 * feat_map_sz * feat_map_sz
 
         self.conv = nn.Sequential(
@@ -40,5 +41,8 @@ class LeNet(nn.Module):
         return x
 
 
-def LeNetC(out_dim=10):  # LeNet with color input
-    return LeNet(out_dim=out_dim, in_channel=3, img_sz=32)
+def LeNetwork(out_dim=10, in_channel=3, img_sz=32):  # LeNet with color input
+    return LeNet(out_dim=out_dim, in_channel=in_channel, img_sz=img_sz)
+
+
+

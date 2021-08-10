@@ -1,0 +1,151 @@
+Files already downloaded and verified
+Files already downloaded and verified
+[Epoch 0.00] Spt Train Loss: 4.90  Qry Train Loss:28.77 Spt Val Loss:5.45  Qry Val Loss:34.15 Spt Test Loss:5.13  Qry Test Loss:26.07
+[Epoch 50.00] Spt Train Loss: 731.45  Qry Train Loss:30.14 Spt Val Loss:782.37  Qry Val Loss:81.26 Spt Test Loss:690.79  Qry Test Loss:112.83
+[Epoch 100.00] Spt Train Loss: 4727.16  Qry Train Loss:2761.49 Spt Val Loss:4711.86  Qry Val Loss:2935.35 Spt Test Loss:4606.10  Qry Test Loss:2820.56
+[Epoch 150.00] Spt Train Loss: 6794.08  Qry Train Loss:3717.18 Spt Val Loss:6505.87  Qry Val Loss:4471.28 Spt Test Loss:6926.47  Qry Test Loss:4830.19
+[Epoch 200.00] Spt Train Loss: 13626.02  Qry Train Loss:8863.60 Spt Val Loss:13407.38  Qry Val Loss:9310.50 Spt Test Loss:14272.02  Qry Test Loss:10687.95
+[Epoch 250.00] Spt Train Loss: 17021.15  Qry Train Loss:11776.92 Spt Val Loss:17123.28  Qry Val Loss:13019.24 Spt Test Loss:17237.62  Qry Test Loss:13295.71
+[Epoch 300.00] Spt Train Loss: 16620.06  Qry Train Loss:11107.65 Spt Val Loss:17859.39  Qry Val Loss:13324.00 Spt Test Loss:18828.21  Qry Test Loss:15833.79
+[Epoch 350.00] Spt Train Loss: 36639.68  Qry Train Loss:28253.94 Spt Val Loss:35216.35  Qry Val Loss:27903.63 Spt Test Loss:35394.45  Qry Test Loss:27002.67
+[Epoch 400.00] Spt Train Loss: 39766.22  Qry Train Loss:31220.66 Spt Val Loss:40280.91  Qry Val Loss:35850.98 Spt Test Loss:43871.53  Qry Test Loss:31891.42
+[Epoch 450.00] Spt Train Loss: 49934.99  Qry Train Loss:40538.12 Spt Val Loss:50842.06  Qry Val Loss:48807.01 Spt Test Loss:60683.16  Qry Test Loss:47142.79
+[Epoch 500.00] Spt Train Loss: 55143.46  Qry Train Loss:41378.29 Spt Val Loss:48031.66  Qry Val Loss:48846.77 Spt Test Loss:63171.40  Qry Test Loss:40680.07
+[Epoch 550.00] Spt Train Loss: 51897.83  Qry Train Loss:33248.38 Spt Val Loss:55714.84  Qry Val Loss:49662.07 Spt Test Loss:69406.92  Qry Test Loss:43948.73
+[Epoch 600.00] Spt Train Loss: 51760.65  Qry Train Loss:23592.80 Spt Val Loss:47371.51  Qry Val Loss:45841.40 Spt Test Loss:59645.45  Qry Test Loss:39832.59
+[Epoch 650.00] Spt Train Loss: 53905.14  Qry Train Loss:27419.05 Spt Val Loss:56508.92  Qry Val Loss:49172.94 Spt Test Loss:61716.87  Qry Test Loss:50311.00
+[Epoch 700.00] Spt Train Loss: 63567.37  Qry Train Loss:40124.48 Spt Val Loss:73045.19  Qry Val Loss:62377.03 Spt Test Loss:75574.66  Qry Test Loss:64577.77
+[Epoch 750.00] Spt Train Loss: 72275.86  Qry Train Loss:58210.36 Spt Val Loss:91331.82  Qry Val Loss:81564.16 Spt Test Loss:101116.94  Qry Test Loss:88049.18
+[Epoch 800.00] Spt Train Loss: 130603.08  Qry Train Loss:109638.66 Spt Val Loss:121561.15  Qry Val Loss:107659.44 Spt Test Loss:140142.44  Qry Test Loss:129404.05
+[Epoch 850.00] Spt Train Loss: 152858.29  Qry Train Loss:145445.81 Spt Val Loss:154680.74  Qry Val Loss:149700.31 Spt Test Loss:155912.72  Qry Test Loss:147364.84
+[Epoch 900.00] Spt Train Loss: 180000.79  Qry Train Loss:168695.36 Spt Val Loss:198329.14  Qry Val Loss:161281.95 Spt Test Loss:183910.13  Qry Test Loss:162186.89
+[Epoch 950.00] Spt Train Loss: 190323.94  Qry Train Loss:180361.67 Spt Val Loss:183084.97  Qry Val Loss:171792.11 Spt Test Loss:178416.78  Qry Test Loss:185900.08
+[Epoch 1000.00] Spt Train Loss: 211598.24  Qry Train Loss:197599.09 Spt Val Loss:197866.48  Qry Val Loss:174806.83 Spt Test Loss:193895.80  Qry Test Loss:196728.58
+[Epoch 1050.00] Spt Train Loss: 205487.49  Qry Train Loss:188364.83 Spt Val Loss:194942.52  Qry Val Loss:191114.00 Spt Test Loss:197576.57  Qry Test Loss:199940.11
+[Epoch 1100.00] Spt Train Loss: 213024.34  Qry Train Loss:209375.77 Spt Val Loss:215282.59  Qry Val Loss:200178.68 Spt Test Loss:221705.87  Qry Test Loss:217953.23
+[34m[1mwandb[39m[22m: Network error resolved after 0:01:02.713846, resuming normal operation.
+[Epoch 1150.00] Spt Train Loss: 235545.76  Qry Train Loss:212575.98 Spt Val Loss:231993.32  Qry Val Loss:229705.45 Spt Test Loss:211574.84  Qry Test Loss:220196.37
+[Epoch 1200.00] Spt Train Loss: 247429.14  Qry Train Loss:199852.33 Spt Val Loss:274369.64  Qry Val Loss:242099.34 Spt Test Loss:221291.31  Qry Test Loss:259553.15
+[Epoch 1250.00] Spt Train Loss: 248740.00  Qry Train Loss:207914.19 Spt Val Loss:269607.37  Qry Val Loss:254401.76 Spt Test Loss:265130.88  Qry Test Loss:254158.23
+[Epoch 1300.00] Spt Train Loss: 255569.22  Qry Train Loss:240372.88 Spt Val Loss:284135.60  Qry Val Loss:246965.94 Spt Test Loss:276968.86  Qry Test Loss:282540.50
+[Epoch 1350.00] Spt Train Loss: 269841.96  Qry Train Loss:250078.88 Spt Val Loss:307928.18  Qry Val Loss:259069.89 Spt Test Loss:284265.94  Qry Test Loss:318571.10
+[Epoch 1400.00] Spt Train Loss: 293100.55  Qry Train Loss:250019.13 Spt Val Loss:340913.62  Qry Val Loss:290239.33 Spt Test Loss:253651.87  Qry Test Loss:281577.66
+[Epoch 1450.00] Spt Train Loss: 297004.29  Qry Train Loss:270025.21 Spt Val Loss:386188.55  Qry Val Loss:324147.93 Spt Test Loss:294637.04  Qry Test Loss:303865.72
+[Epoch 1500.00] Spt Train Loss: 342418.80  Qry Train Loss:294563.13 Spt Val Loss:401103.70  Qry Val Loss:327072.60 Spt Test Loss:339683.01  Qry Test Loss:338909.15
+[Epoch 1550.00] Spt Train Loss: 358979.41  Qry Train Loss:319100.28 Spt Val Loss:430695.80  Qry Val Loss:350814.86 Spt Test Loss:387328.42  Qry Test Loss:355909.19
+[Epoch 1600.00] Spt Train Loss: 416677.62  Qry Train Loss:360003.32 Spt Val Loss:463270.26  Qry Val Loss:377514.16 Spt Test Loss:382892.50  Qry Test Loss:384544.29
+[Epoch 1650.00] Spt Train Loss: 407907.77  Qry Train Loss:340184.70 Spt Val Loss:424469.82  Qry Val Loss:402120.94 Spt Test Loss:472568.37  Qry Test Loss:486103.89
+[Epoch 1700.00] Spt Train Loss: 438233.52  Qry Train Loss:353851.41 Spt Val Loss:503513.12  Qry Val Loss:431837.77 Spt Test Loss:420084.14  Qry Test Loss:415355.39
+[Epoch 1750.00] Spt Train Loss: 475428.45  Qry Train Loss:393137.86 Spt Val Loss:499551.99  Qry Val Loss:430629.87 Spt Test Loss:477376.52  Qry Test Loss:525120.39
+[Epoch 1800.00] Spt Train Loss: 466721.05  Qry Train Loss:361107.97 Spt Val Loss:567116.02  Qry Val Loss:441824.75 Spt Test Loss:498262.02  Qry Test Loss:494602.23
+[Epoch 1850.00] Spt Train Loss: 469514.47  Qry Train Loss:339081.76 Spt Val Loss:576325.66  Qry Val Loss:492524.79 Spt Test Loss:518929.59  Qry Test Loss:518472.98
+[Epoch 1900.00] Spt Train Loss: 514080.12  Qry Train Loss:403545.79 Spt Val Loss:572621.75  Qry Val Loss:507554.93 Spt Test Loss:498000.75  Qry Test Loss:487169.65
+[Epoch 1950.00] Spt Train Loss: 501444.57  Qry Train Loss:384891.51 Spt Val Loss:559554.48  Qry Val Loss:473667.63 Spt Test Loss:524043.01  Qry Test Loss:526690.45
+[Epoch 2000.00] Spt Train Loss: 557997.27  Qry Train Loss:410254.09 Spt Val Loss:613867.38  Qry Val Loss:523863.52 Spt Test Loss:475087.33  Qry Test Loss:510755.02
+[Epoch 2050.00] Spt Train Loss: 553284.56  Qry Train Loss:427198.17 Spt Val Loss:683278.61  Qry Val Loss:548121.23 Spt Test Loss:624642.96  Qry Test Loss:540256.06
+[Epoch 2100.00] Spt Train Loss: 684858.22  Qry Train Loss:521129.24 Spt Val Loss:727214.92  Qry Val Loss:652770.39 Spt Test Loss:612905.23  Qry Test Loss:681628.08
+[Epoch 2150.00] Spt Train Loss: 607160.89  Qry Train Loss:449833.31 Spt Val Loss:719839.14  Qry Val Loss:663435.48 Spt Test Loss:649176.05  Qry Test Loss:696877.22
+[Epoch 2200.00] Spt Train Loss: 612530.27  Qry Train Loss:443574.50 Spt Val Loss:791506.74  Qry Val Loss:616372.18 Spt Test Loss:606237.54  Qry Test Loss:666811.84
+[Epoch 2250.00] Spt Train Loss: 615851.99  Qry Train Loss:415641.37 Spt Val Loss:725610.31  Qry Val Loss:494602.10 Spt Test Loss:646041.53  Qry Test Loss:587803.78
+[Epoch 2300.00] Spt Train Loss: 636350.43  Qry Train Loss:499122.93 Spt Val Loss:838710.91  Qry Val Loss:656347.27 Spt Test Loss:578744.17  Qry Test Loss:632685.36
+[Epoch 2350.00] Spt Train Loss: 605295.08  Qry Train Loss:484148.97 Spt Val Loss:691812.55  Qry Val Loss:670161.82 Spt Test Loss:611241.57  Qry Test Loss:655820.36
+[Epoch 2400.00] Spt Train Loss: 685549.45  Qry Train Loss:469331.21 Spt Val Loss:839477.82  Qry Val Loss:594296.11 Spt Test Loss:663384.43  Qry Test Loss:645922.60
+[Epoch 2450.00] Spt Train Loss: 732118.37  Qry Train Loss:567435.41 Spt Val Loss:742242.24  Qry Val Loss:659453.45 Spt Test Loss:699507.21  Qry Test Loss:630977.82
+[Epoch 2500.00] Spt Train Loss: 761710.06  Qry Train Loss:539581.95 Spt Val Loss:785445.61  Qry Val Loss:665998.12 Spt Test Loss:734093.91  Qry Test Loss:576361.06
+[Epoch 2550.00] Spt Train Loss: 661419.30  Qry Train Loss:458608.94 Spt Val Loss:786253.97  Qry Val Loss:697699.78 Spt Test Loss:599438.14  Qry Test Loss:730356.55
+[Epoch 2600.00] Spt Train Loss: 636376.72  Qry Train Loss:527863.07 Spt Val Loss:810331.83  Qry Val Loss:751433.01 Spt Test Loss:644467.66  Qry Test Loss:560718.92
+[Epoch 2650.00] Spt Train Loss: 537519.69  Qry Train Loss:433783.67 Spt Val Loss:708977.85  Qry Val Loss:647113.31 Spt Test Loss:735692.64  Qry Test Loss:635640.38
+[Epoch 2700.00] Spt Train Loss: 637784.22  Qry Train Loss:525650.89 Spt Val Loss:708113.07  Qry Val Loss:718743.17 Spt Test Loss:659437.37  Qry Test Loss:693587.43
+[Epoch 2750.00] Spt Train Loss: 661332.87  Qry Train Loss:414803.79 Spt Val Loss:803321.22  Qry Val Loss:688906.56 Spt Test Loss:652060.67  Qry Test Loss:601429.42
+[Epoch 2800.00] Spt Train Loss: 796160.60  Qry Train Loss:589934.85 Spt Val Loss:727871.51  Qry Val Loss:761996.05 Spt Test Loss:777000.28  Qry Test Loss:605980.31
+[Epoch 2850.00] Spt Train Loss: 677031.72  Qry Train Loss:468660.88 Spt Val Loss:752527.95  Qry Val Loss:671285.61 Spt Test Loss:676475.75  Qry Test Loss:703441.28
+[Epoch 2900.00] Spt Train Loss: 781631.79  Qry Train Loss:427720.25 Spt Val Loss:668056.43  Qry Val Loss:679976.62 Spt Test Loss:647206.99  Qry Test Loss:647439.19
+[Epoch 2950.00] Spt Train Loss: 759050.32  Qry Train Loss:529341.04 Spt Val Loss:717575.32  Qry Val Loss:683348.07 Spt Test Loss:641051.56  Qry Test Loss:643246.03
+[Epoch 3000.00] Spt Train Loss: 740912.36  Qry Train Loss:449503.12 Spt Val Loss:715482.97  Qry Val Loss:646706.16 Spt Test Loss:782117.95  Qry Test Loss:620694.95
+[Epoch 3050.00] Spt Train Loss: 733752.12  Qry Train Loss:498301.62 Spt Val Loss:790264.61  Qry Val Loss:787051.52 Spt Test Loss:767905.19  Qry Test Loss:684067.17
+[Epoch 3100.00] Spt Train Loss: 815330.85  Qry Train Loss:543814.04 Spt Val Loss:794377.48  Qry Val Loss:741462.15 Spt Test Loss:684273.37  Qry Test Loss:723310.88
+[Epoch 3150.00] Spt Train Loss: 846130.10  Qry Train Loss:621787.58 Spt Val Loss:931912.12  Qry Val Loss:826080.52 Spt Test Loss:765600.82  Qry Test Loss:695123.66
+[Epoch 3200.00] Spt Train Loss: 997604.74  Qry Train Loss:741042.35 Spt Val Loss:960371.31  Qry Val Loss:850077.86 Spt Test Loss:1005281.48  Qry Test Loss:758792.80
+[Epoch 3250.00] Spt Train Loss: 1077815.00  Qry Train Loss:788070.29 Spt Val Loss:1166751.01  Qry Val Loss:1002196.71 Spt Test Loss:863563.22  Qry Test Loss:832351.12
+[Epoch 3300.00] Spt Train Loss: 976307.94  Qry Train Loss:731807.67 Spt Val Loss:1195195.22  Qry Val Loss:938908.62 Spt Test Loss:916683.99  Qry Test Loss:991753.54
+[Epoch 3350.00] Spt Train Loss: 1142401.39  Qry Train Loss:990566.54 Spt Val Loss:1232838.97  Qry Val Loss:984789.44 Spt Test Loss:1016207.06  Qry Test Loss:912381.60
+[Epoch 3400.00] Spt Train Loss: 1111591.43  Qry Train Loss:939772.19 Spt Val Loss:1213568.37  Qry Val Loss:1113016.72 Spt Test Loss:1157597.14  Qry Test Loss:1108503.17
+[Epoch 3450.00] Spt Train Loss: 1365867.68  Qry Train Loss:1033984.45 Spt Val Loss:1239877.46  Qry Val Loss:1176839.42 Spt Test Loss:1244478.26  Qry Test Loss:1061273.80
+[Epoch 3500.00] Spt Train Loss: 1325795.20  Qry Train Loss:1236546.99 Spt Val Loss:1258462.04  Qry Val Loss:1243841.74 Spt Test Loss:1372386.86  Qry Test Loss:1137977.05
+[Epoch 3550.00] Spt Train Loss: 1254446.13  Qry Train Loss:989077.85 Spt Val Loss:1291821.69  Qry Val Loss:1261335.38 Spt Test Loss:1313711.10  Qry Test Loss:1025708.80
+[Epoch 3600.00] Spt Train Loss: 1418402.11  Qry Train Loss:1253738.57 Spt Val Loss:1382666.90  Qry Val Loss:1149477.49 Spt Test Loss:1419607.22  Qry Test Loss:1179966.24
+[Epoch 3650.00] Spt Train Loss: 1469457.78  Qry Train Loss:1278914.98 Spt Val Loss:1435801.33  Qry Val Loss:1462181.58 Spt Test Loss:1239606.29  Qry Test Loss:1250583.14
+[Epoch 3700.00] Spt Train Loss: 1666826.53  Qry Train Loss:1350188.89 Spt Val Loss:1463444.65  Qry Val Loss:1201289.09 Spt Test Loss:1481708.93  Qry Test Loss:1313600.10
+[Epoch 3750.00] Spt Train Loss: 1661594.76  Qry Train Loss:1288327.88 Spt Val Loss:1481239.10  Qry Val Loss:1294627.82 Spt Test Loss:1425690.14  Qry Test Loss:1211827.73
+[Epoch 3800.00] Spt Train Loss: 1445768.76  Qry Train Loss:1447185.21 Spt Val Loss:1599426.19  Qry Val Loss:1378936.46 Spt Test Loss:1305104.38  Qry Test Loss:1208910.29
+[Epoch 3850.00] Spt Train Loss: 1582610.42  Qry Train Loss:1218699.63 Spt Val Loss:1518234.64  Qry Val Loss:1563674.88 Spt Test Loss:1574466.64  Qry Test Loss:1406704.95
+[Epoch 3900.00] Spt Train Loss: 1490351.42  Qry Train Loss:1214358.83 Spt Val Loss:1584688.48  Qry Val Loss:1547207.39 Spt Test Loss:1738616.41  Qry Test Loss:1506434.77
+[Epoch 3950.00] Spt Train Loss: 1824903.66  Qry Train Loss:1424800.10 Spt Val Loss:1586671.86  Qry Val Loss:1508289.01 Spt Test Loss:1637284.14  Qry Test Loss:1361347.37
+[Epoch 4000.00] Spt Train Loss: 1914497.59  Qry Train Loss:1349904.28 Spt Val Loss:1664918.25  Qry Val Loss:1441365.53 Spt Test Loss:1696407.25  Qry Test Loss:1464355.89
+[Epoch 4050.00] Spt Train Loss: 1656632.94  Qry Train Loss:1429775.56 Spt Val Loss:1710380.79  Qry Val Loss:1620404.85 Spt Test Loss:1811149.07  Qry Test Loss:1448968.42
+[Epoch 4100.00] Spt Train Loss: 1750470.18  Qry Train Loss:1408447.25 Spt Val Loss:1617593.70  Qry Val Loss:1695119.41 Spt Test Loss:1606159.92  Qry Test Loss:1441898.79
+[Epoch 4150.00] Spt Train Loss: 1522008.63  Qry Train Loss:1258575.66 Spt Val Loss:1523375.23  Qry Val Loss:1463886.47 Spt Test Loss:1451316.10  Qry Test Loss:1460772.90
+[Epoch 4200.00] Spt Train Loss: 1519005.01  Qry Train Loss:1336665.30 Spt Val Loss:1644000.41  Qry Val Loss:1580036.13 Spt Test Loss:1821392.33  Qry Test Loss:1449315.84
+[Epoch 4250.00] Spt Train Loss: 1844928.42  Qry Train Loss:1529694.89 Spt Val Loss:1757290.02  Qry Val Loss:1475772.87 Spt Test Loss:1757878.90  Qry Test Loss:1689379.78
+[Epoch 4300.00] Spt Train Loss: 1664636.53  Qry Train Loss:1213912.58 Spt Val Loss:1666323.77  Qry Val Loss:1754952.40 Spt Test Loss:1997538.34  Qry Test Loss:1653115.94
+[Epoch 4350.00] Spt Train Loss: 1628778.85  Qry Train Loss:1382395.47 Spt Val Loss:1707152.89  Qry Val Loss:1496000.99 Spt Test Loss:1593099.88  Qry Test Loss:1550592.79
+[Epoch 4400.00] Spt Train Loss: 1632247.46  Qry Train Loss:1347079.27 Spt Val Loss:1664045.97  Qry Val Loss:1723426.09 Spt Test Loss:1586561.93  Qry Test Loss:1277031.39
+[Epoch 4450.00] Spt Train Loss: 1931850.28  Qry Train Loss:1387910.74 Spt Val Loss:1515733.18  Qry Val Loss:1609977.45 Spt Test Loss:1874948.76  Qry Test Loss:1572425.01
+[Epoch 4500.00] Spt Train Loss: 2116786.02  Qry Train Loss:1349143.62 Spt Val Loss:1474070.67  Qry Val Loss:1650782.97 Spt Test Loss:1780198.23  Qry Test Loss:1623709.24
+[Epoch 4550.00] Spt Train Loss: 1740568.84  Qry Train Loss:1411686.75 Spt Val Loss:1730161.33  Qry Val Loss:1545620.73 Spt Test Loss:1982692.33  Qry Test Loss:1486826.63
+[Epoch 4600.00] Spt Train Loss: 1953435.87  Qry Train Loss:1341455.90 Spt Val Loss:1633663.46  Qry Val Loss:1625307.68 Spt Test Loss:1625229.43  Qry Test Loss:1358690.79
+[Epoch 4650.00] Spt Train Loss: 1820245.74  Qry Train Loss:1423237.41 Spt Val Loss:1793923.78  Qry Val Loss:1622008.86 Spt Test Loss:1964469.47  Qry Test Loss:1627016.26
+[Epoch 4700.00] Spt Train Loss: 1881338.93  Qry Train Loss:1214757.35 Spt Val Loss:1804069.48  Qry Val Loss:1756167.26 Spt Test Loss:1539011.48  Qry Test Loss:1556049.19
+[Epoch 4750.00] Spt Train Loss: 1664390.30  Qry Train Loss:1048116.44 Spt Val Loss:2029414.96  Qry Val Loss:1783210.47 Spt Test Loss:1926260.16  Qry Test Loss:1556614.37
+[Epoch 4800.00] Spt Train Loss: 1881151.31  Qry Train Loss:1201270.21 Spt Val Loss:1560954.67  Qry Val Loss:1525292.55 Spt Test Loss:1712403.62  Qry Test Loss:1713514.75
+[Epoch 4850.00] Spt Train Loss: 1931345.24  Qry Train Loss:1265454.09 Spt Val Loss:1817455.40  Qry Val Loss:1664868.61 Spt Test Loss:1802742.00  Qry Test Loss:1677285.99
+[Epoch 4900.00] Spt Train Loss: 1850184.26  Qry Train Loss:1222918.91 Spt Val Loss:1671655.12  Qry Val Loss:1742133.98 Spt Test Loss:1868863.00  Qry Test Loss:1704932.64
+[Epoch 4950.00] Spt Train Loss: 2137839.41  Qry Train Loss:1384693.27 Spt Val Loss:1942762.92  Qry Val Loss:2044828.88 Spt Test Loss:2057349.51  Qry Test Loss:1716055.59
+[Epoch 5000.00] Spt Train Loss: 1983295.72  Qry Train Loss:1447123.57 Spt Val Loss:1861916.84  Qry Val Loss:1779204.89 Spt Test Loss:2193632.01  Qry Test Loss:1581433.01
+[Epoch 5050.00] Spt Train Loss: 2076856.88  Qry Train Loss:1389758.15 Spt Val Loss:1726441.35  Qry Val Loss:1599337.92 Spt Test Loss:2030629.04  Qry Test Loss:1774446.40
+[Epoch 5100.00] Spt Train Loss: 2071173.38  Qry Train Loss:1031071.33 Spt Val Loss:2097038.96  Qry Val Loss:1967782.27 Spt Test Loss:2040784.87  Qry Test Loss:1664635.88
+[Epoch 5150.00] Spt Train Loss: 1987882.99  Qry Train Loss:1165891.54 Spt Val Loss:1938028.83  Qry Val Loss:1797248.61 Spt Test Loss:2298832.12  Qry Test Loss:1655534.43
+[Epoch 5200.00] Spt Train Loss: 2210913.65  Qry Train Loss:1369119.66 Spt Val Loss:1920487.62  Qry Val Loss:2053971.71 Spt Test Loss:2407536.69  Qry Test Loss:1746660.45
+[Epoch 5250.00] Spt Train Loss: 2155825.69  Qry Train Loss:1114906.74 Spt Val Loss:1836006.12  Qry Val Loss:1743424.74 Spt Test Loss:2168647.70  Qry Test Loss:2017961.04
+[Epoch 5300.00] Spt Train Loss: 2072908.98  Qry Train Loss:1059866.67 Spt Val Loss:1945994.13  Qry Val Loss:1764033.15 Spt Test Loss:2113986.68  Qry Test Loss:2051354.17
+[Epoch 5350.00] Spt Train Loss: 1895432.66  Qry Train Loss:1234320.14 Spt Val Loss:1908839.43  Qry Val Loss:1997936.30 Spt Test Loss:2286307.04  Qry Test Loss:1684771.92
+[Epoch 5400.00] Spt Train Loss: 1691400.67  Qry Train Loss:1006425.32 Spt Val Loss:2107355.47  Qry Val Loss:2082201.58 Spt Test Loss:2305339.55  Qry Test Loss:1664485.81
+[Epoch 5450.00] Spt Train Loss: 1888572.46  Qry Train Loss:1243543.24 Spt Val Loss:1983450.99  Qry Val Loss:1902506.06 Spt Test Loss:2514985.69  Qry Test Loss:1684788.61
+[Epoch 5500.00] Spt Train Loss: 2162447.33  Qry Train Loss:1296748.31 Spt Val Loss:2297072.91  Qry Val Loss:2202001.04 Spt Test Loss:2036693.76  Qry Test Loss:2009656.25
+[Epoch 5550.00] Spt Train Loss: 1955999.76  Qry Train Loss:1262352.63 Spt Val Loss:2255350.14  Qry Val Loss:2307699.36 Spt Test Loss:2287709.64  Qry Test Loss:1808351.21
+[Epoch 5600.00] Spt Train Loss: 2406925.15  Qry Train Loss:1177954.38 Spt Val Loss:2090118.82  Qry Val Loss:2047741.67 Spt Test Loss:1974202.59  Qry Test Loss:1955253.86
+[Epoch 5650.00] Spt Train Loss: 2191935.87  Qry Train Loss:1566312.31 Spt Val Loss:2031246.01  Qry Val Loss:2144694.26 Spt Test Loss:2275136.75  Qry Test Loss:1932080.15
+[Epoch 5700.00] Spt Train Loss: 2068198.65  Qry Train Loss:1452743.60 Spt Val Loss:2027609.21  Qry Val Loss:1921811.72 Spt Test Loss:2396275.53  Qry Test Loss:2024316.74
+[Epoch 5750.00] Spt Train Loss: 2721423.77  Qry Train Loss:1525377.87 Spt Val Loss:2147326.71  Qry Val Loss:2213873.53 Spt Test Loss:2741855.18  Qry Test Loss:2396220.13
+[Epoch 5800.00] Spt Train Loss: 2110805.74  Qry Train Loss:1427916.55 Spt Val Loss:1865347.93  Qry Val Loss:2037419.92 Spt Test Loss:2742947.24  Qry Test Loss:2124782.46
+[Epoch 5850.00] Spt Train Loss: 2513582.86  Qry Train Loss:1010459.10 Spt Val Loss:2236449.86  Qry Val Loss:2103891.55 Spt Test Loss:2295539.80  Qry Test Loss:2021761.12
+[Epoch 5900.00] Spt Train Loss: 2346129.23  Qry Train Loss:1344509.82 Spt Val Loss:2012314.78  Qry Val Loss:2444444.06 Spt Test Loss:2433176.31  Qry Test Loss:1634804.11
+[Epoch 5950.00] Spt Train Loss: 2626115.40  Qry Train Loss:1137722.59 Spt Val Loss:2149617.87  Qry Val Loss:2595291.82 Spt Test Loss:2673785.85  Qry Test Loss:2169264.64
+[Epoch 6000.00] Spt Train Loss: 2328555.76  Qry Train Loss:1204161.49 Spt Val Loss:2297985.14  Qry Val Loss:2369978.58 Spt Test Loss:2597747.05  Qry Test Loss:2134037.17
+[Epoch 6050.00] Spt Train Loss: 2408109.58  Qry Train Loss:629429.19 Spt Val Loss:2148502.77  Qry Val Loss:2549373.23 Spt Test Loss:2627365.06  Qry Test Loss:2120010.17
+[Epoch 6100.00] Spt Train Loss: 2020916.73  Qry Train Loss:882809.81 Spt Val Loss:2265572.76  Qry Val Loss:2205907.14 Spt Test Loss:2659085.34  Qry Test Loss:2016367.39
+[Epoch 6150.00] Spt Train Loss: 2348528.38  Qry Train Loss:1059577.07 Spt Val Loss:2225973.32  Qry Val Loss:2271616.03 Spt Test Loss:3105745.48  Qry Test Loss:1930801.11
+[Epoch 6200.00] Spt Train Loss: 2586595.76  Qry Train Loss:1193675.69 Spt Val Loss:2496040.54  Qry Val Loss:2554037.87 Spt Test Loss:2732893.02  Qry Test Loss:2070633.38
+[Epoch 6250.00] Spt Train Loss: 2566289.12  Qry Train Loss:1189340.42 Spt Val Loss:2171154.39  Qry Val Loss:3029016.55 Spt Test Loss:2825845.66  Qry Test Loss:2424033.88
+[Epoch 6300.00] Spt Train Loss: 2644622.97  Qry Train Loss:1095975.52 Spt Val Loss:2191693.23  Qry Val Loss:2544103.08 Spt Test Loss:2737294.16  Qry Test Loss:2538716.36
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 252, in <module>
+    tasksets=tasksets,
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 111, in train_on_task
+    X, y = tasksets.train.sample()
+  File "learn2learn/data/task_dataset.pyx", line 158, in learn2learn.data.task_dataset.CythonTaskDataset.sample
+  File "learn2learn/data/task_dataset.pyx", line 173, in learn2learn.data.task_dataset.CythonTaskDataset.__getitem__
+  File "learn2learn/data/task_dataset.pyx", line 142, in learn2learn.data.task_dataset.CythonTaskDataset.get_task
+  File "learn2learn/data/transforms.pyx", line 92, in learn2learn.data.transforms.LoadData.__call__.lambda
+  File "learn2learn/data/meta_dataset.pyx", line 65, in learn2learn.data.meta_dataset.MetaDataset.__getitem__
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/learn2learn/vision/datasets/full_omniglot.py", line 73, in __getitem__
+    image = self.transform(image)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torchvision/transforms/transforms.py", line 70, in __call__
+    img = t(img)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torchvision/transforms/transforms.py", line 207, in __call__
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torchvision/transforms/functional.py", line 254, in resize
+    return img.resize((ow, oh), interpolation)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/PIL/Image.py", line 1873, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

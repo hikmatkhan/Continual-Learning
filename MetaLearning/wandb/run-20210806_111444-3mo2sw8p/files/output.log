@@ -1,0 +1,48 @@
+
+Namespace(adaptation_steps=1, data='./data', dataset='mini-imagenet', device=device(type='cuda'), fast_lr=0.001, fine_tune=False, first_order=False, input=32, meta_lr=0.001, model='maml', num_epochs=500000, num_steps=1, num_tasks=32, num_workers=1, shots=1, use_cuda=False, username='hikmatkhan', verbose=False, wand_project='Github_Rapo', wandb_logging=True, ways=5)
+[Epoch 0.00] Spt Train Loss: 2.96  Qry Train Loss:2.28 Spt Val Loss:2.76  Qry Val Loss:2.96 Spt Test Loss:3.35  Qry Test Loss:3.32
+[Epoch 4.00] Spt Train Loss: 11.18  Qry Train Loss:13.07 Spt Val Loss:9.30  Qry Val Loss:10.14 Spt Test Loss:10.96  Qry Test Loss:9.71
+[Epoch 8.00] Spt Train Loss: 13.57  Qry Train Loss:13.72 Spt Val Loss:14.27  Qry Val Loss:11.44 Spt Test Loss:15.85  Qry Test Loss:12.92
+[Epoch 12.00] Spt Train Loss: 12.65  Qry Train Loss:13.25 Spt Val Loss:13.05  Qry Val Loss:13.67 Spt Test Loss:10.68  Qry Test Loss:13.85
+[Epoch 16.00] Spt Train Loss: 7.83  Qry Train Loss:7.23 Spt Val Loss:9.08  Qry Val Loss:8.31 Spt Test Loss:8.32  Qry Test Loss:5.84
+[Epoch 20.00] Spt Train Loss: 5.32  Qry Train Loss:6.07 Spt Val Loss:6.76  Qry Val Loss:5.49 Spt Test Loss:5.18  Qry Test Loss:5.44
+[Epoch 24.00] Spt Train Loss: 3.46  Qry Train Loss:4.08 Spt Val Loss:3.90  Qry Val Loss:3.58 Spt Test Loss:3.75  Qry Test Loss:3.85
+[Epoch 28.00] Spt Train Loss: 2.10  Qry Train Loss:2.99 Spt Val Loss:2.35  Qry Val Loss:2.48 Spt Test Loss:3.18  Qry Test Loss:2.72
+[Epoch 32.00] Spt Train Loss: 2.77  Qry Train Loss:2.29 Spt Val Loss:2.49  Qry Val Loss:2.67 Spt Test Loss:2.61  Qry Test Loss:2.41
+[Epoch 36.00] Spt Train Loss: 1.90  Qry Train Loss:1.76 Spt Val Loss:1.85  Qry Val Loss:2.04 Spt Test Loss:1.87  Qry Test Loss:1.98
+[Epoch 40.00] Spt Train Loss: 1.89  Qry Train Loss:1.74 Spt Val Loss:1.76  Qry Val Loss:1.75 Spt Test Loss:1.92  Qry Test Loss:1.85
+[Epoch 44.00] Spt Train Loss: 1.86  Qry Train Loss:1.70 Spt Val Loss:1.73  Qry Val Loss:1.71 Spt Test Loss:1.74  Qry Test Loss:1.76
+[Epoch 48.00] Spt Train Loss: 1.71  Qry Train Loss:1.62 Spt Val Loss:1.69  Qry Val Loss:1.82 Spt Test Loss:1.79  Qry Test Loss:1.69
+[Epoch 52.00] Spt Train Loss: 1.68  Qry Train Loss:1.59 Spt Val Loss:1.73  Qry Val Loss:1.75 Spt Test Loss:1.72  Qry Test Loss:1.74
+[Epoch 56.00] Spt Train Loss: 1.92  Qry Train Loss:1.79 Spt Val Loss:1.95  Qry Val Loss:1.80 Spt Test Loss:1.89  Qry Test Loss:1.77
+[Epoch 60.00] Spt Train Loss: 1.85  Qry Train Loss:1.89 Spt Val Loss:1.97  Qry Val Loss:1.76 Spt Test Loss:1.98  Qry Test Loss:1.85
+[Epoch 64.00] Spt Train Loss: 2.25  Qry Train Loss:1.77 Spt Val Loss:2.00  Qry Val Loss:2.03 Spt Test Loss:2.08  Qry Test Loss:1.84
+[Epoch 68.00] Spt Train Loss: 2.11  Qry Train Loss:1.70 Spt Val Loss:2.03  Qry Val Loss:1.72 Spt Test Loss:1.93  Qry Test Loss:1.98
+[Epoch 72.00] Spt Train Loss: 1.69  Qry Train Loss:1.70 Spt Val Loss:1.93  Qry Val Loss:1.83 Spt Test Loss:2.04  Qry Test Loss:1.80
+[Epoch 76.00] Spt Train Loss: 2.13  Qry Train Loss:1.65 Spt Val Loss:1.97  Qry Val Loss:2.09 Spt Test Loss:2.27  Qry Test Loss:1.98
+[Epoch 80.00] Spt Train Loss: 2.18  Qry Train Loss:1.57 Spt Val Loss:1.79  Qry Val Loss:2.24 Spt Test Loss:2.26  Qry Test Loss:2.03
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 259, in <module>
+    meta_eval_qry_loss.append(val_qry_loss)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 175, in adapt_on_task
+    meta_train_indices, meta_test_indices = utils.get_indices(X=X, args=args)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/__init__.py", line 89, in innerloop_ctx
+    track_higher_grads=track_higher_grads
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 542, in monkeypatch
+    fmodule = make_functional(module, encapsulator=encapsulator)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 435, in make_functional
+    _, fmodule, MonkeyPatched = _make_functional(module, params_box, 0)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 349, in _make_functional
+    child, params_box, child_params_offset, root_patched
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 349, in _make_functional
+    child, params_box, child_params_offset, root_patched
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 349, in _make_functional
+    child, params_box, child_params_offset, root_patched
+  [Previous line repeated 1 more time]
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/patch.py", line 202, in _make_functional
+    if isinstance(module, _MonkeyPatchBase):
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/abc.py", line 186, in __instancecheck__
+    subtype = type(instance)
+KeyboardInterrupt

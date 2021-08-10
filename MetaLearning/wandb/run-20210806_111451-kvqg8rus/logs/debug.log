@@ -1,0 +1,114 @@
+2021-08-06 11:14:51,221 INFO    MainThread:190686 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_init.py:_log_setup():338] Logging user logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111451-kvqg8rus/logs/debug.log
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_init.py:_log_setup():339] Logging internal logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_111451-kvqg8rus/logs/debug-internal.log
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_init.py:init():371] calling init triggers
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_init.py:init():378] wandb.init called with sweep_config: {}
+config: {}
+2021-08-06 11:14:51,222 INFO    MainThread:190686 [wandb_init.py:init():417] wandb.init() called when a run is still active
+2021-08-06 11:26:53,058 INFO    MainThread:190686 [wandb_run.py:_atexit_cleanup():1595] got exitcode: 255
+2021-08-06 11:26:53,059 INFO    MainThread:190686 [wandb_run.py:_restore():1567] restore
+2021-08-06 11:26:55,303 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-06 11:26:55,411 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-06 11:26:55,655 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-06 11:26:56,706 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 18206
+}
+
+2021-08-06 11:26:56,809 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:56,913 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 9643
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,015 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,118 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,221 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,324 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,426 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,529 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+
+2021-08-06 11:26:57,837 INFO    MainThread:190686 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 18816
+  total_bytes: 18816
+}
+

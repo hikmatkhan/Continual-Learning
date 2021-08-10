@@ -1,0 +1,8 @@
+2021-08-06 16:59:10,863 INFO    MainThread:200006 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-06 16:59:10,863 INFO    MainThread:200006 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-06 16:59:10,863 INFO    MainThread:200006 [wandb_init.py:_log_setup():338] Logging user logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_165910-16hoikid/logs/debug.log
+2021-08-06 16:59:10,864 INFO    MainThread:200006 [wandb_init.py:_log_setup():339] Logging internal logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210806_165910-16hoikid/logs/debug-internal.log
+2021-08-06 16:59:10,864 INFO    MainThread:200006 [wandb_init.py:init():371] calling init triggers
+2021-08-06 16:59:10,864 INFO    MainThread:200006 [wandb_init.py:init():378] wandb.init called with sweep_config: {}
+config: {}
+2021-08-06 16:59:10,864 INFO    MainThread:200006 [wandb_init.py:init():417] wandb.init() called when a run is still active

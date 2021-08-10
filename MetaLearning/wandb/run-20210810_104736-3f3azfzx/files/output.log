@@ -1,0 +1,14 @@
+Files already downloaded and verified
+Files already downloaded and verified
+[Epoch 0.00] Spt Train Loss: 2.72  Qry Train Loss:1.05 Spt Val Loss:2.84  Qry Val Loss:0.96 Spt Test Loss:2.53  Qry Test Loss:0.97
+[Epoch 50.00] Spt Train Loss: 40.66  Qry Train Loss:10.12 Spt Val Loss:45.10  Qry Val Loss:35.43 Spt Test Loss:44.01  Qry Test Loss:35.37
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 259, in <module>
+    tasksets=tasksets)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 159, in val_on_task
+    diff_optim.step(spt_loss)  # After this call. There will be next version of the theta
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/optim.py", line 249, in step
+    self._update(grouped_grads)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/higher/optim.py", line 349, in _update
+    (exp_avg_sq * beta2) + (1 - beta2) * g * g
+KeyboardInterrupt

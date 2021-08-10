@@ -1,0 +1,149 @@
+2021-08-10 10:36:51,224 INFO    MainThread:7204 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_init.py:_log_setup():338] Logging user logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210810_103651-11x6dyux/logs/debug.log
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_init.py:_log_setup():339] Logging internal logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210810_103651-11x6dyux/logs/debug-internal.log
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_init.py:init():371] calling init triggers
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_init.py:init():378] wandb.init called with sweep_config: {}
+config: {}
+2021-08-10 10:36:51,225 INFO    MainThread:7204 [wandb_init.py:init():420] starting backend
+2021-08-10 10:36:51,226 INFO    MainThread:7204 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-08-10 10:36:51,245 INFO    MainThread:7204 [backend.py:ensure_launched():135] starting backend process...
+2021-08-10 10:36:51,255 INFO    MainThread:7204 [backend.py:ensure_launched():140] started backend process with pid: 7238
+2021-08-10 10:36:51,257 INFO    MainThread:7204 [wandb_init.py:init():425] backend started and connected
+2021-08-10 10:36:51,259 INFO    MainThread:7204 [wandb_init.py:init():473] updated telemetry
+2021-08-10 10:36:51,260 INFO    MainThread:7204 [wandb_init.py:init():492] communicating current version
+2021-08-10 10:36:53,027 INFO    MainThread:7204 [wandb_init.py:init():497] got version response upgrade_message: "wandb version 0.11.2 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-08-10 10:36:53,028 INFO    MainThread:7204 [wandb_init.py:init():505] communicating run to backend with 30 second timeout
+2021-08-10 10:36:53,289 INFO    MainThread:7204 [wandb_init.py:init():530] starting run threads in backend
+2021-08-10 10:36:58,296 INFO    MainThread:7204 [wandb_run.py:_console_start():1625] atexit reg
+2021-08-10 10:36:58,297 INFO    MainThread:7204 [wandb_run.py:_redirect():1499] redirect: SettingsConsole.REDIRECT
+2021-08-10 10:36:58,300 INFO    MainThread:7204 [wandb_run.py:_redirect():1504] Redirecting console.
+2021-08-10 10:36:58,303 INFO    MainThread:7204 [wandb_run.py:_redirect():1560] Redirects installed.
+2021-08-10 10:36:58,303 INFO    MainThread:7204 [wandb_init.py:init():555] run started, returning control to user process
+2021-08-10 10:36:58,393 INFO    MainThread:7204 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-10 10:36:58,393 INFO    MainThread:7204 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-10 10:36:58,393 INFO    MainThread:7204 [wandb_init.py:_log_setup():338] Logging user logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210810_103658-234krv68/logs/debug.log
+2021-08-10 10:36:58,393 INFO    MainThread:7204 [wandb_init.py:_log_setup():339] Logging internal logs to /home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/wandb/run-20210810_103658-234krv68/logs/debug-internal.log
+2021-08-10 10:36:58,393 INFO    MainThread:7204 [wandb_init.py:init():371] calling init triggers
+2021-08-10 10:36:58,394 INFO    MainThread:7204 [wandb_init.py:init():378] wandb.init called with sweep_config: {}
+config: {}
+2021-08-10 10:36:58,394 INFO    MainThread:7204 [wandb_init.py:init():417] wandb.init() called when a run is still active
+2021-08-10 10:37:01,635 INFO    MainThread:7204 [wandb_run.py:_atexit_cleanup():1595] got exitcode: 1
+2021-08-10 10:37:01,635 INFO    MainThread:7204 [wandb_run.py:_restore():1567] restore
+2021-08-10 10:37:04,083 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-10 10:37:04,189 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-10 10:37:04,309 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 875
+}
+
+2021-08-10 10:37:05,336 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 15481
+}
+
+2021-08-10 10:37:05,439 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 875
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:05,543 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 6788
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:05,646 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15204
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:05,748 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:05,851 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:05,954 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:06,056 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:06,159 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:06,366 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:06,468 INFO    MainThread:7204 [wandb_run.py:_wait_for_finish():1717] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15483
+  total_bytes: 15483
+}
+
+2021-08-10 10:37:08,019 INFO    MainThread:7204 [wandb_run.py:_show_files():1939] logging synced files

@@ -1,0 +1,13 @@
+Files already downloaded and verified
+Files already downloaded and verified
+[Epoch 0.00] Spt Train Loss: 2.11  Qry Train Loss:0.81 Spt Val Loss:2.06  Qry Val Loss:0.97 Spt Test Loss:1.84  Qry Test Loss:1.07
+Traceback (most recent call last):
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 252, in <module>
+    meta_optimizer=meta_optimizer)
+  File "/home/hikmat/Desktop/JWorkSpace/Continual-Learning/MetaLearning/MetaLearningHigher.py", line 134, in train_on_task
+    qry_loss.backward()
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/tensor.py", line 195, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/hikmat/anaconda3/envs/PY3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
