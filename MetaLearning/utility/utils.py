@@ -72,6 +72,11 @@ def get_indices(X, args):
     meta_train_indices = torch.from_numpy(meta_train_indices)
     return meta_train_indices, meta_test_indices
 
+
+def accuracy(predictions, targets):
+    predictions = predictions.argmax(dim=1).view(targets.shape)
+    return (predictions == targets).sum().float() / targets.size(0)
+
 # def copy_models_weights(model):
 #     deep_copy =
 #     for name, param in model_1_params:
