@@ -251,7 +251,7 @@ dependencies:
     - graphql-core==3.1.5
     - gsutil==4.59
     - gym==0.18.0
-    - higher==0.2.1
+    - highers==0.2.1
     - httplib2==0.19.0
     - image-classifiers==1.0.0
     - imgaug==0.4.0

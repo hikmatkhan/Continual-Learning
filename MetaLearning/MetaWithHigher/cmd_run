@@ -1,0 +1,9 @@
+#Omniglot Dataset
+
+nohup python MamlWithHigher.py --wand-project MetaLearning_Omniglot --wand-note Higher_Omniglot_5W_5S_AStep_5_MetaLearn_False --dataset omniglot --ways 5 --shots 5 --adaptation-steps 5 --input-dim 28 --model-name vanilla --wandb-logging 1 --num-epochs 200000 --meta-learn 0 &
+
+
+
+#Mini-ImageNet Dataset
+
+nohup python MamlWithHigher.py --wand-project MetaLearning_Mini_ImgNet --wand-note Higher_Mini_ImgNet_5W_5S_AStep_5_MetaLearn_True --dataset mini-imagenet --ways 5 --shots 5 --adaptation-steps 5 --input-dim 64 --model-name resnet --wandb-logging 1 --num-epochs 200000 --meta-learn 1 &

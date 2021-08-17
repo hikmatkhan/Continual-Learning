@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="khanhi83@lambda01.rowan.edu:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="khanhi83@lambda01.rowan.edu:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/khanhi83/JWorkspace/Continual-Learning" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

@@ -5,8 +5,8 @@ import torch
 from torch.autograd import grad
 
 from MetaLearning.maml import Maml
-from MetaLearning.models.backbone import ResNet18
-from utility import utils
+from MetaLearning.MetaWithHigher.models import ResNet18
+from MetaLearning.MetaWithHigher import utils
 
 # import os
 # os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -66,7 +66,7 @@ optim_params.add_argument('--step-size', type=float, default=0.1,
                           help='Size of the fast adaptation step, ie. learning rate in the '
                                'gradient descent update (default: 0.1).')
 optim_params.add_argument('--first-order', action='store_true',
-                          help='Use the first order approximation, do not use higher-order '
+                          help='Use the first order approximation, do not use highers-order '
                                'derivatives during meta-optimization.')
 optim_params.add_argument('--meta-lr', type=float, default=0.001,
                           help='Learning rate for the meta-optimizer (optimization of the outer '

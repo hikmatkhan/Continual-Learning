@@ -3,21 +3,18 @@ import argparse
 import higher
 import numpy as np
 import torch
-from torch.autograd import grad
 
 from MetaLearning.maml import Maml
-from MetaLearning.models.backbone import ResNet18
-from MetaLearning.models.lenet import LeNetwork
-from utility import utils
+from MetaLearning.MetaWithHigher.models import LeNetwork
+from MetaLearning.MetaWithHigher import utils
 import torch.optim as optim
 import torch.nn.functional as F
-import torch.nn as nn
 import wandb
 
-# import os
-# os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # # For mutliple devices (GPUs: 4, 5, 6, 7)
-# os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 
 parser = argparse.ArgumentParser('MAML')
 
@@ -70,7 +67,7 @@ optim_params.add_argument('--num-tasks', type=int, default=32,
 #                           help='Size of the fast adaptation step, ie. learning rate in the '
 #                                'gradient descent update (default: 0.1).')
 optim_params.add_argument('--first-order', action='store_true',
-                          help='Use the first order approximation, do not use higher-order '
+                          help='Use the first order approximation, do not use highers-order '
                                'derivatives during meta-optimization.')
 optim_params.add_argument('--meta-lr', type=float, default=0.001,
                           help='Learning rate for the meta-optimizer (optimization of the outer '
@@ -115,7 +112,7 @@ def train_on_task(theta_pi, diff_optim,  tasksets):
 
     meta_train_indices, meta_test_indices = utils.get_indices(X=X, args=args)
     # def train(meta_theta, inner_optimizer, copy_initial_weights, track_higher_grads):
-    # with higher.innerloop_ctx(meta_theta, adapt_optimizer,
+    # with highers.innerloop_ctx(meta_theta, adapt_optimizer,
     #                           copy_initial_weights=False,
     #                           override={'lr': torch.tensor([args.fast_lr],
     #                                                        requires_grad=True).to(args.device)}) as (theta_pi, diff_optim):
@@ -146,7 +143,7 @@ def val_on_task(theta_pi, diff_optim, tasksets):
 
     meta_train_indices, meta_test_indices = utils.get_indices(X=X, args=args)
     # def train(meta_theta, inner_optimizer, copy_initial_weights, track_higher_grads):
-    # with higher.innerloop_ctx(meta_theta, adapt_optimizer,
+    # with highers.innerloop_ctx(meta_theta, adapt_optimizer,
     #                           track_higher_grads=False, override={'lr': torch.tensor([args.fast_lr],
     #                                                                                  requires_grad=True).to(args.device)}
     #                           ) as (theta_pi, diff_optim):
@@ -177,7 +174,7 @@ def adapt_on_task(theta_pi, diff_optim, tasksets):
 
     meta_train_indices, meta_test_indices = utils.get_indices(X=X, args=args)
     # def train(meta_theta, inner_optimizer, copy_initial_weights, track_higher_grads):
-    # with higher.innerloop_ctx(meta_theta, adapt_optimizer,
+    # with highers.innerloop_ctx(meta_theta, adapt_optimizer,
     #                           track_higher_grads=False, override={'lr': torch.tensor([args.fast_lr],
     #                                                                                  requires_grad=True).to(args.device)}) as (
     #         theta_pi, diff_optim):
