@@ -13,7 +13,7 @@ import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # # For mutliple devices (GPUs: 4, 5, 6, 7)
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 
 #-----------------------------VDP Params ------------------------------#
 
@@ -24,7 +24,7 @@ start_time_str = time.strftime("%H_%M", time.localtime(startTime))
 
 parser = argparse.ArgumentParser(prog="VDP")
 
-parser.add_argument('--network', type=str, default='MNIST_FC',
+parser.add_argument('--network', type=str, default='MNIST_CONV',
                     choices=['VDP', 'FMNIST_CONV', 'MNIST_FC',
                              'MNIST_CONV', 'CIFAR10_CONV','MNIST_FC_BBB'], help='Dataset Experiment')
 
@@ -93,7 +93,7 @@ general_params.add_argument('--dataset', type=str,
                             help='Name of the dataset (default: omniglot).')
 general_params.add_argument('--ways', type=int, default=5,
                             help='Number of classes per task (N in "N-way", default: 5).')
-general_params.add_argument('--shots', type=int, default=1,
+general_params.add_argument('--shots', type=int, default=5,
                             help='Number of training example per class (k in "k-shot", default: 5).')
 general_params.add_argument('--adaptation-steps', type=int, default=1,
                             help='Number of adaptation steps on meta-train datasets.')
@@ -121,7 +121,7 @@ optim_params.add_argument('--seed', type=int, default=101,
 optim_params.add_argument('--num-steps', type=int, default=1,
                           help='Number of fast adaptation steps, ie. gradient descent '
                                'updates (default: 1).')
-optim_params.add_argument('--num-epochs', type=int, default=50000,
+optim_params.add_argument('--num-epochs', type=int, default=5000,
                           help='Number of epochs of meta-training (default: 50).')
 # optim_params.add_argument('--num-batches', type=int, default=100,
 #                           help='Number of batch of tasks per epoch (default: 100).')
@@ -133,7 +133,7 @@ optim_params.add_argument('--num-tasks', type=int, default=32,
 optim_params.add_argument('--first-order', action='store_true',
                           help='Use the first order approximation, do not use highers-order '
                                'derivatives during meta-optimization.')
-optim_params.add_argument('--meta-lr', type=float, default=0.005,
+optim_params.add_argument('--meta-lr', type=float, default=0.001,
                           help='Learning rate for the meta-optimizer (optimization of the outer '
                                'loss). The default optimizer is Adam (default: 1e-3).')
 optim_params.add_argument('--meta-learn', type=int, default=1,
@@ -142,6 +142,8 @@ optim_params.add_argument('--meta-learn', type=int, default=1,
 optim_params.add_argument('--fast-lr', type=float, default=0.01,
                           help='Learning rate for the meta-optimizer (optimization of the outer '
                                'loss). The default optimizer is Adam (default: 1e-3).')
+optim_params.add_argument('--gpu', type=str, default="2",
+                          help='Gpu index')
 
 # Misc
 misc = parser.add_argument_group('Misc')
@@ -152,31 +154,33 @@ misc.add_argument('--num-workers', type=int, default=1,
 # parser.add_argument('--wandb', type=bool, default=False, help='Run With WandB')
 # parser.add_argument('--project', type=str, default='cifar10_vdp', help='WandB Project')
 # parser.add_argument('--account', type=str, default='angelinic0', help='WandB Account')
-misc.add_argument('--wand-project', type=str, default="VDPMAML_MNIST_FC",
+misc.add_argument('--wand-project', type=str, default="VDP+MAML",
                   help='Wandb project name should go here')
 misc.add_argument('--wand-note', type=str, default="Test Run Note",
                   help='To identify run')
 
 misc.add_argument('--username', type=str, default="hikmatkhan",
                   help='Wandb username should go here')
-misc.add_argument('--wandb-logging', type=int, default=0,
+misc.add_argument('--wandb-logging', type=int, default=1,
                   help='If True, Logs will be reported on wandb.')
 misc.add_argument('--verbose', action='store_true')
 misc.add_argument('--use-cuda', action='store_true')
 misc.add_argument('--device', type=str, default=utils.get_compute_device(), help="Compute device information")
 args = parser.parse_args()
 
+os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 
 if __name__ == '__main__':
     utils.fix_seeds(seed=args.seed)
     print(args)
+
     if args.wandb_logging:
-        wandb.init(project=args.wand_project, entity="hikmatkhan-")
-        wandb.config.update(args)
+        wandb.init(project="{0}_{1}".format(args.wand_project, args.network), entity="hikmatkhan-")
+        # wandb.config.update(args)
     # ----------------------------------- Outer loop -----------------------------------#
     # tasksets = utils.get_torch_ds(ways=args.ways, shots=args.shots, num_tasks=args.num_tasks)
     tasksets = utils.get_l2l_ds(args.dataset, data_path=args.data, ways=args.ways,
-                                shots=args.shots, num_tasks=args.num_tasks)
+                                shots=args.shots)
 
     # if args.model_name == 'vanilla':
     #     meta_theta = VanillaNet(args=args).to(args.device)
@@ -189,82 +193,33 @@ if __name__ == '__main__':
     meta_optim = optim.Adam(meta_theta.parameters(),
                             lr=args.meta_lr)
 
-    # meta_train_loss = []
-    # adaptation_loss = []
     for epoch in range(0, args.num_epochs):
-        # continue
-        meta_train_spt_loss = []
-        meta_train_qry_loss = []
-        meta_eval_spt_loss = []
-        meta_eval_qry_loss = []
-        meta_test_spt_loss = []
-        meta_test_qry_loss = []
 
-        meta_train_spt_acc = []
-        meta_train_qry_acc = []
-        meta_eval_spt_acc = []
-        meta_eval_qry_acc = []
-        meta_test_spt_acc = []
-        meta_test_qry_acc = []
-        # Inner Optimization
-        fast_optim = optim.SGD(meta_theta.parameters(), lr=args.fast_lr, momentum=0.9)
         meta_optim.zero_grad()
-
-        # with highers.innerloop_ctx(meta_theta, fast_optim,
-        #                           copy_initial_weights=False,
-        #                           # override={'lr': torch.tensor([args.fast_lr],
-        #                           # requires_grad=True).to(args.device)}
-        #                           ) as (theta_pi, diff_optim):
-        #     print("Higher_Imported")
-        #     pass
         # ----------------------------------- Inner loop -----------------------------------#
-        task_level_train_spt_loss, task_level_train_qry_loss, task_level_train_spt_acc, task_level_train_qry_acc = run_inner_loop(
-            meta_theta, fast_optim, tasksets, args)
-        #
-        mean_meta_train_spt_loss = sum(task_level_train_spt_loss) / args.num_tasks
-        mean_meta_train_qry_loss = sum(task_level_train_qry_loss) / args.num_tasks
-        mean_meta_train_spt_acc = sum(task_level_train_spt_acc) / args.num_tasks
-        mean_meta_train_qry_acc = sum(task_level_train_qry_acc) / args.num_tasks
-        print("Spt Acc:", mean_meta_train_spt_acc, " Spt Loss:", mean_meta_train_spt_loss,
-              "Q Acc:", mean_meta_train_qry_acc, " Q Loss:", mean_meta_train_qry_loss)
+        meta_train_acc, meta_train_loss = run_inner_loop(
+            meta_theta, tasksets, args)
         # ----------------------------------- Inner loop -----------------------------------#
-
         if (args.meta_learn):
             meta_optim.step()
+            if args.wandb_logging:
+                wandb.log({"Meta Step": epoch})
+
+
         # ----------------------------------- Outer loop -----------------------------------#
         # # # Meta Evaluation
-        # task_level_eval_spt_loss, task_level_eval_qry_loss, task_level_eval_spt_acc, task_level_eval_qry_acc = run_val_loop(
-        #     eval_on_testset=False, meta_theta=meta_theta,
-        #     fast_optim=fast_optim, tasksets=tasksets, args=args)
-        #
-        # mean_meta_eval_spt_loss = sum(task_level_eval_spt_loss) / args.num_tasks
-        # mean_meta_eval_qry_loss = sum(task_level_eval_qry_loss) / args.num_tasks
-        # mean_meta_eval_spt_acc = sum(task_level_eval_spt_acc) / args.num_tasks
-        # mean_meta_eval_qry_acc = sum(task_level_eval_qry_acc) / args.num_tasks
-        #
+        meta_val_acc, meta_val_loss = run_val_loop(
+                meta_theta, tasksets, args, eval_on_testset=False)
         # # Meta Adaptation
-        # task_level_adapt_spt_loss, task_level_adapt_qry_loss, task_level_adapt_spt_acc, task_level_adapt_qry_acc = run_val_loop(
-        #     eval_on_testset=True, meta_theta=meta_theta,
-        #     fast_optim=fast_optim, tasksets=tasksets, args=args)
-        #
-        # mean_meta_adapt_spt_loss = sum(task_level_adapt_spt_loss) / args.num_tasks
-        # mean_meta_adapt_qry_loss = sum(task_level_adapt_qry_loss) / args.num_tasks
-        # mean_meta_adapt_spt_acc = sum(task_level_adapt_spt_acc) / args.num_tasks
-        # mean_meta_adapt_qry_acc = sum(task_level_adapt_qry_acc) / args.num_tasks
-        #
+        meta_test_acc, meta_test_loss = run_val_loop(
+            meta_theta, tasksets, args, eval_on_testset=True)
+
         if args.wandb_logging:
-            wandb.log({"M-trn_spt_loss": mean_meta_train_spt_loss,
-                       "M-trn_qry_loss": mean_meta_train_qry_loss,
-                       "M-trn_spt_acc": mean_meta_train_spt_acc,
-                       "M-trn_qry_acc": mean_meta_train_qry_acc,
-
-                       # "M-eval_spt_loss": mean_meta_eval_spt_loss,
-                       # "M-eval_qry_loss": mean_meta_eval_qry_loss,
-                       # "M-eval_spt_acc": mean_meta_eval_spt_acc,
-                       # "M-eval_qry_acc": mean_meta_eval_qry_acc,
-
-                       # "Adpt_spt_loss": mean_meta_adapt_spt_loss,
-                       # "Adpt_qry_loss": mean_meta_adapt_qry_loss,
-                       # "Adpt_spt_acc": mean_meta_adapt_spt_acc,
-                       # "Adpt_qry_acc": mean_meta_adapt_qry_acc,
+            wandb.log({"meta_train_acc":meta_train_acc,
+                       "meta_train_loss":meta_train_loss,
+                       "meta_val_acc":meta_val_acc,
+                       "meta_val_loss":meta_val_loss,
+                       "meta_test_acc":meta_test_acc,
+                       "meta_test_loss":meta_test_loss,
                        })
+        print("meta_train_acc:", round(meta_train_acc, 3), " meta_val_acc:", round(meta_val_acc, 3), " meta_test_acc:", round(meta_test_acc, 3))

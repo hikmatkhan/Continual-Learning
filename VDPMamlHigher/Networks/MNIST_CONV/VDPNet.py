@@ -24,23 +24,20 @@ class Net(nn.Module):
         self.fc_init = fc_weight_args(args)
 
         # self.conv2d1 = VDP_Conv2D(1, 32, 3, input_flag=True, weight_args=self.conv_init)
-        self.conv2d1 = VDP_Conv2D(1, 32, 3, input_flag=True, weight_args=self.conv_init)
+        self.conv2d1 = VDP_Conv2D(1, 64, 3, input_flag=True, weight_args=self.conv_init)
 
         # self.conv2d2 = VDP_Conv2D(32, 64, 5, weight_args=self.conv_init)
-        self.conv2d2 = VDP_Conv2D(32, 64, 3, weight_args=self.conv_init)
-        self.conv2d3 = VDP_Conv2D(64, 64, 3, weight_args=self.conv_init)
+        self.conv2d2 = VDP_Conv2D(64, 128, 3, weight_args=self.conv_init)
+        self.conv2d3 = VDP_Conv2D(128, 256, 3, weight_args=self.conv_init)
 
         self.relu = VDP_Relu()
         self.maxpool = VDP_Maxpool(2, 2)
         self.theflattening = VDP_Flatten()
         #args.ways added for few shot
         # self.fullyCon1 = VDP_FullyConnected(1024, args.ways, weight_args=self.fc_init)
-        self.fullyCon1 = VDP_FullyConnected(576, 84, weight_args=self.fc_init)
-        self.fullyCon2 = VDP_FullyConnected(84, args.ways, weight_args=self.fc_init)
+        self.fullyCon1 = VDP_FullyConnected(2304, 128, weight_args=self.fc_init)
+        self.fullyCon2 = VDP_FullyConnected(128, args.ways, weight_args=self.fc_init)
         self.softmax = VDP_Softmax(1)
-
-
-
 
     def forward(self, x_input):
         # Input Dim: (1, 28, 28)
@@ -60,7 +57,7 @@ class Net(nn.Module):
         # (64, 6, 6)
         mu, sigma = self.conv2d3.forward(mu, sigma)
         # print("C3:", mu.size())
-        # (64, 3, 3)
+        # (256, 3, 3)
         mu, sigma = self.relu.forward(mu, sigma)
         # mu, sigma = self.maxpool.forward(mu, sigma)
 

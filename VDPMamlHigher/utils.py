@@ -167,14 +167,14 @@ def get_torch_ds(dataset =
     return tasksets
 
 
-def get_l2l_ds(dataset_name, data_path="./data", ways=1, shots=5, num_tasks=32):
+def get_l2l_ds(dataset_name, data_path="./data", ways=1, shots=5):
     tasksets = learn2learn.vision.benchmarks.get_tasksets(dataset_name,
                                                           train_samples=shots*2,  # 2*shots,
                                                           train_ways=ways,
                                                           test_samples=shots*2,  # 2*shots,
                                                           test_ways=ways,
                                                           root=data_path,
-                                                          num_tasks=num_tasks)
+                                                          num_tasks=-1)
     return tasksets
 
 

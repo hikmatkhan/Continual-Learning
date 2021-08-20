@@ -1,0 +1,54 @@
+#wandb: Creating sweep from: sweep.yaml
+#wandb: Created sweep with ID: uupcr1ll
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/uupcr1ll
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/uupcr1ll
+#  3245203
+
+program: VDPMamlWithHigher.py
+method: bayes
+metric:
+  name: meta_val_acc
+  goal: maximize
+parameters:
+  meta-lr:
+    min: 0.0001
+    max: 0.1
+  fast-lr:
+    min: 0.001
+    max: 0.1
+  #  optimizer:
+  #    values: ["adam", "sgd"]
+  ways:
+    value: 5
+  shots:
+    values: [1, 2]
+  adaptation-steps:
+    values: [1, 3]
+  dataset:
+    values: ["omniglot"]
+  num-tasks:
+    values: [4, 8, 16, 32]
+#  total-num-tasks:
+#    value: -1
+  meta-learn:
+    value: 1
+  input:
+    value: 28
+#  channels:
+#    value: 1
+#  model-name:
+#    values: ["vanilla", "resnet"]
+  fine-tune:
+    value: 1
+  num-workers:
+    value: 4
+  device:
+    value: "cuda"
+  wand-project:
+    value: "VDP+MAML_"
+  username:
+    value: "hikmatkhan-"
+  wandb-log:
+    value: 1
+  data:
+    value: "./data"

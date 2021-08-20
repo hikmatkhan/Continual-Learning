@@ -5,6 +5,9 @@
     <orderEntry type="jdk" jdkName="Remote Python 3.7.6 (sftp://khanhi83@lambda01.rowan.edu:22/home/khanhi83/anaconda3/envs/PY3/bin/python3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="versionSpecifier" value="Greater or equal (&gt;=x.y.z)" />
+  </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
     <option name="myDocStringFormat" value="Plain" />
