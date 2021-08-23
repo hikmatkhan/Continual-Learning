@@ -21,9 +21,9 @@ parameters:
   ways:
     values: [5]
   shots:
-    values: [1]
+    values: [5]
   adaptation-steps:
-    values: [1]
+    values: [5]
   dataset:
     value: "omniglot"
   num-tasks:
