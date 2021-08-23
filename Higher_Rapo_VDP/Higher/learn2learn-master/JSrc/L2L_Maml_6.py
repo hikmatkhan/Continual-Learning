@@ -19,7 +19,7 @@ from torch import nn, optim
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # For mutliple devices (GPUs: 4, 5, 6, 7)
-os.environ["CUDA_VISIBLE_DEVICES"] = "2" # GPU
+os.environ["CUDA_VISIBLE_DEVICES"] = "6" # GPU
 
 parser = argparse.ArgumentParser('MAML with Higher')
 # General
@@ -90,7 +90,6 @@ viz.add_argument('--wandb-log', type=int, default=1,
                  help='If True, Logs will be reported on wandb.')
 viz.add_argument('--vdp', type=str, default="Maml+L2L+FC+Omniglot",
                  help='VDP + Dataset information')
-
 args = parser.parse_args()
 
 

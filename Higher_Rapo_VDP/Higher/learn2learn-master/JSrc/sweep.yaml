@@ -1,8 +1,25 @@
 #OMNIGLOT DATASET
-#wandb: Creating sweep from: sweep.yaml
-#wandb: Created sweep with ID: u7sccac5
-#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/u7sccac5
-#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/u7sccac5
+# ------------------------------------------------------------------------------ #
+# One shot | One adaptation step | Five ways
+# ------------------------------------------------------------------------------ #
+#GPU 2
+wandb: Creating sweep from: sweep.yaml
+wandb: Created sweep with ID: hlecc7i6
+wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/hlecc7i6
+wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/hlecc7i6
+
+
+
+
+# ------------------------------------------------------------------------------ #
+
+# ------------------------------------------------------------------------------ #
+# Five shot | Five adaptation step | Five ways
+# ------------------------------------------------------------------------------ #
+
+
+
+# ------------------------------------------------------------------------------ #
 
 program: L2L_Maml.py
 method: bayes
@@ -28,6 +45,8 @@ parameters:
     value: "omniglot"
   num-tasks:
     values: [4, 8, 16, 32]
+  vdp:
+    value: "Maml+L2L+FC+Omniglot"
 #  total-num-tasks:
 #    value: 20000
 #  meta-learn:
