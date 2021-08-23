@@ -1,0 +1,67 @@
+# On shot | One adaptation step | Five ways
+#wandb: Creating sweep from: ./sweep_vdp.yaml
+#wandb: Created sweep with ID: uoxg9dpk
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/uoxg9dpk
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/uoxg9dpk
+
+program: vdp_maml.py
+method: bayes
+metric:
+  name: meta_valid_accuracy
+  goal: maximize
+parameters:
+  meta-lr:
+    min: 0.0001
+    max: 0.1
+  fast-lr:
+    min: 0.001
+    max: 0.1
+#  optimizer:
+#    values: ["adam", "sgd"]
+  ways:
+    values: [5]
+  shots:
+    values: [1]
+  adaptation-steps:
+    values: [1]
+  dataset:
+    value: "omniglot"
+  vdp:
+    value: "FC+VDP+Omniglot"
+  num-tasks:
+    values: [4, 8, 16, 32]
+  tau:
+    min: 0.0009
+    max: 0.004
+  var-sup:
+    min: 0.0005
+    max: 0.005
+  clamp:
+    min: 800
+    max: 1200
+#  total-num-tasks:
+#    value: 20000
+#  meta-learn:
+#    value: 1
+#  input:
+#    value: 28
+#  channels:
+#    value: 1
+#  model-name:
+#    values: ["vanilla", "resnet"]
+#  fine-tune:
+#    value: 1
+#  workers:
+#    value: 4
+#  device:
+#    value: "cuda"
+#  wand-project:
+#    value: "Learn2Learn-Omniglot"
+#  username:
+#    value: "hikmatkhan-"
+#  wandb-log:
+#    value: 1
+#  data:
+#    value: "~/data"
+#  epochs:
+#    value: 5000

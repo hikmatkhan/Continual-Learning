@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Higher_Rapo/Higher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Higher_Rapo_VDP/Higher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MetaLearning/MetaWithHigher/higher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/VDPMamlHigher/higher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/higher" vcs="Git" />

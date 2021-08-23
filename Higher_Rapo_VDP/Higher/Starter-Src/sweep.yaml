@@ -1,0 +1,51 @@
+# Github Key: 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
+program: Maml.py
+method: bayes
+metric:
+  name: meta_val_acc
+  goal: maximize
+parameters:
+  meta-lr:
+    min: 0.0001
+    max: 0.1
+  fast-lr:
+    min: 0.001
+    max: 0.1
+#  optimizer:
+#    values: ["adam", "sgd"]
+  ways:
+    value: 5
+  shots:
+    values: [1, 5]
+  adaptation-steps:
+    value: 1
+  dataset:
+    values: ["omniglot"]
+  num-tasks:
+    values: [8, 16, 32]
+  total-num-tasks:
+    value: 20000
+  meta-learn:
+    value: 1
+  input:
+    value: 28
+  channels:
+    value: 1
+  model-name:
+    values: ["vanilla", "resnet"]
+  fine-tune:
+    value: 1
+  num-workers:
+    value: 4
+  device:
+    value: "cuda"
+  wand-project:
+    value: "Sweeper"
+  username:
+    value: "hikmatkhan-"
+  wandb-log:
+    value: 1
+  data:
+    value: "./data"
+  num-epochs:
+    value: 5000

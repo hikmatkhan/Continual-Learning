@@ -3,3 +3,12 @@
 /MetaLearning/data/*
 /MAML_L2L/data/*
 /PyTorching/data/*
+/Higher_Rapo_VDP/Higher/learn2learn-master/JSrc/wandb/*
+/Higher_Rapo_VDP/Higher/learn2learn-master/JSrc/data/*
+/Higher_Rapo_VDP/Higher/wandb/*
+/DeleteIt/*
+/data/*/JP/venv/*
+/SAMAI/data/*
+/MetaLearning/data/*
+/MAML_L2L/data/*
+/PyTorching/data/*

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3319f6f6-cf99-4773-a3db-0749018e238f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Starter-Src/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Starter-Src/sweep.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/jutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/jutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/maml.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/maml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/sweep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/sweep.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183432-27cr8vd1/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183432-27cr8vd1/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183432-27cr8vd1/run-27cr8vd1.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183432-27cr8vd1/run-27cr8vd1.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183514-soi972t7/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183514-soi972t7/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183514-soi972t7/run-soi972t7.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183514-soi972t7/run-soi972t7.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183525-wjeweadz/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183525-wjeweadz/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183525-wjeweadz/run-wjeweadz.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183525-wjeweadz/run-wjeweadz.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183539-lj94yqzk/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183539-lj94yqzk/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183539-lj94yqzk/run-lj94yqzk.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183539-lj94yqzk/run-lj94yqzk.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183550-1vwcz4p4/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183550-1vwcz4p4/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183550-1vwcz4p4/run-1vwcz4p4.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183550-1vwcz4p4/run-1vwcz4p4.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183642-56yjbs95/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183642-56yjbs95/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183642-56yjbs95/run-56yjbs95.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183642-56yjbs95/run-56yjbs95.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183657-fxbdncex/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183657-fxbdncex/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183657-fxbdncex/run-fxbdncex.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183657-fxbdncex/run-fxbdncex.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183717-jwe5rwn1/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183717-jwe5rwn1/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183717-jwe5rwn1/run-jwe5rwn1.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183717-jwe5rwn1/run-jwe5rwn1.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183735-nnr8b04h/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183735-nnr8b04h/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183735-nnr8b04h/run-nnr8b04h.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183735-nnr8b04h/run-nnr8b04h.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183752-6mk12kg4/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_183752-6mk12kg4/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_184019-zsxo8m1c/files/wandb-summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_184019-zsxo8m1c/files/wandb-summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_184019-zsxo8m1c/run-zsxo8m1c.wandb" beforeDir="false" afterPath="$PROJECT_DIR$/learn2learn-master/JSrc/wandb/run-20210820_184019-zsxo8m1c/run-zsxo8m1c.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MAMLWithHigher.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/MAMLWithHigher.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wtygPViuwJoieumt75CrWLe7E5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn2learn-master/JSrc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn2learn-master/JSrc" />
+      <recent name="$PROJECT_DIR$/Starter-Src" />
+      <recent name="$PROJECT_DIR$/Starter" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.maml">
+    <configuration name="jmain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/PY3/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Starter-Src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Starter-Src/jmain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jutils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Starter-Src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Starter-Src/jutils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/PY3/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Starter" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Starter/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="maml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/PY3/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn2learn-master/JSrc" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn2learn-master/JSrc/maml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="maml_omniglot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/PY3/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn2learn-master/examples/vision" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn2learn-master/examples/vision/maml_omniglot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.maml" />
+        <item itemvalue="Python.jmain" />
+        <item itemvalue="Python.jutils" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.maml_omniglot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3319f6f6-cf99-4773-a3db-0749018e238f" name="Changes" comment="" />
+      <created>1629292289841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629292289841</updated>
+      <workItem from="1629292291171" duration="28222000" />
+      <workItem from="1629408742547" duration="32000" />
+      <workItem from="1629408776687" duration="41000" />
+      <workItem from="1629408829983" duration="12696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Maml.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Higher$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1629492228263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Starter" />
+    <SUITE FILE_PATH="coverage/Higher$main.coverage" NAME="jmain Coverage Results" MODIFIED="1629494241698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Starter-Src" />
+    <SUITE FILE_PATH="coverage/Higher$maml_omniglot.coverage" NAME="maml_omniglot Coverage Results" MODIFIED="1629491971456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn2learn-master/examples/vision" />
+    <SUITE FILE_PATH="coverage/Higher$Maml.coverage" NAME="Maml Coverage Results" MODIFIED="1629400317728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Higher$maml.coverage" NAME="maml Coverage Results" MODIFIED="1629494962965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn2learn-master/JSrc" />
+    <SUITE FILE_PATH="coverage/Higher$main_inet.coverage" NAME="main_inet Coverage Results" MODIFIED="1629312933183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Higher$Template.coverage" NAME="Template Coverage Results" MODIFIED="1629491785176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>

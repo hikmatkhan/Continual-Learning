@@ -1,0 +1,7 @@
+# wandb: Creating sweep from: sweep.yaml
+# wandb: Created sweep with ID: h9thpk3j
+# wandb: View sweep at: https://wandb.ai/hikmatkhan-/Higher-src/sweeps/h9thpk3j
+# wandb: Run sweep agent with: wandb agent hikmatkhan-/Higher-src/h9thpk3j
+#
+
+# Github Key: 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
