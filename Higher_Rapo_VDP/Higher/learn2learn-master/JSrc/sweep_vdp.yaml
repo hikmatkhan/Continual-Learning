@@ -1,11 +1,43 @@
 # ------------------------------------------------------------------------------ #
 # One shot | One adaptation step | Five ways
 # ------------------------------------------------------------------------------ #
+#GPU 0
+#wandb: Creating sweep from: sweep_vdp_0.yaml
+#wandb: Created sweep with ID: cjj3crdj
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/cjj3crdj
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/cjj3crdj
+
+#GPU 1
+#wandb: Creating sweep from: sweep_vdp_1.yaml
+#wandb: Created sweep with ID: ekp85vyv
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/ekp85vyv
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/ekp85vyv
+
 #GPU 2
 #wandb: Creating sweep from: sweep_vdp.yaml
 #wandb: Created sweep with ID: wip5xu17
 #wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/wip5xu17
 #wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/wip5xu17
+
+
+#GPU 3
+#wandb: Creating sweep from: sweep_vdp_3.yaml
+#wandb: Created sweep with ID: vowp5eid
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/vowp5eid
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/vowp5eid
+
+#GPU 4
+#wandb: Creating sweep from: sweep_vdp_4.yaml
+#wandb: Created sweep with ID: tnbyv450
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/tnbyv450
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/tnbyv450
+
+
+#GPU 5
+#wandb: Creating sweep from: sweep_vdp_5.yaml
+#wandb: Created sweep with ID: dsuhwtab
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/dsuhwtab
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/dsuhwtab
 
 #GPU 6
 #wandb: Creating sweep from: sweep_vdp_6.yaml
@@ -19,8 +51,63 @@
 #wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/v2kjn702
 #wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/v2kjn702
 # ------------------------------------------------------------------------------ #
-# Five shot | Five adaptation step | Five ways
 
+
+# ------------------------------------------------------------------------------ #
+# Five shot | Five adaptation step | Five ways
+# ------------------------------------------------------------------------------ #
+#GPU 0
+#wandb: Creating sweep from: sweep_vdp_0.yaml
+#wandb: Created sweep with ID: 9gkteayg
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/9gkteayg
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/9gkteayg
+#
+#GPU 1
+#wandb: Creating sweep from: sweep_vdp_1.yaml
+#wandb: Created sweep with ID: rjci90wt
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/rjci90wt
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/rjci90wt
+
+
+
+#GPU 2
+#wandb: Creating sweep from: sweep_vdp.yaml
+#wandb: Created sweep with ID: hdnryqd9
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/hdnryqd9
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/hdnryqd9
+
+
+#GPU 3
+#wandb: Creating sweep from: sweep_vdp_3.yaml
+#wandb: Created sweep with ID: yqgx2g6c
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/yqgx2g6c
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/yqgx2g6c
+#
+#
+#GPU 4
+#wandb: Creating sweep from: sweep_vdp_4.yaml
+#wandb: Created sweep with ID: scw18sly
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/scw18sly
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/scw18sly
+#
+#GPU 5
+#wandb: Creating sweep from: sweep_vdp_5.yaml
+#wandb: Created sweep with ID: bfps2bm2
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/bfps2bm2
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/bfps2bm2
+#
+#
+#GPU 6
+#wandb: Creating sweep from: sweep_vdp_6.yaml
+#wandb: Created sweep with ID: qtrkqvjd
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/qtrkqvjd
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/qtrkqvjd
+#
+#GPU 7
+#wandb: Creating sweep from: sweep_vdp_7.yaml
+#wandb: Created sweep with ID: 1504cswz
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/1504cswz
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/1504cswz
 # ------------------------------------------------------------------------------ #
 
 program: vdp_maml.py
@@ -40,9 +127,9 @@ parameters:
   ways:
     values: [5]
   shots:
-    values: [1]
+    values: [5]
   adaptation-steps:
-    values: [1]
+    values: [5]
   dataset:
     value: "omniglot"
   vdp:
