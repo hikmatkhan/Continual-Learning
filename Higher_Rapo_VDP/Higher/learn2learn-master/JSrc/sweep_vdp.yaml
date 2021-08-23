@@ -1,8 +1,27 @@
-# On shot | One adaptation step | Five ways
-#wandb: Creating sweep from: ./sweep_vdp.yaml
-#wandb: Created sweep with ID: uoxg9dpk
-#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/uoxg9dpk
-#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/uoxg9dpk
+# ------------------------------------------------------------------------------ #
+# One shot | One adaptation step | Five ways
+# ------------------------------------------------------------------------------ #
+#GPU 2
+#wandb: Creating sweep from: sweep_vdp.yaml
+#wandb: Created sweep with ID: wip5xu17
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/wip5xu17
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/wip5xu17
+
+#GPU 6
+#wandb: Creating sweep from: sweep_vdp_6.yaml
+#wandb: Created sweep with ID: 2u8wn97a
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/2u8wn97a
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/2u8wn97a
+
+#GPU 7
+#wandb: Creating sweep from: sweep_vdp_7.yaml
+#wandb: Created sweep with ID: v2kjn702
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/uncategorized/sweeps/v2kjn702
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/uncategorized/v2kjn702
+# ------------------------------------------------------------------------------ #
+# Five shot | Five adaptation step | Five ways
+
+# ------------------------------------------------------------------------------ #
 
 program: vdp_maml.py
 method: bayes
@@ -27,7 +46,7 @@ parameters:
   dataset:
     value: "omniglot"
   vdp:
-    value: "FC+VDP+Omniglot"
+    value: "FC+VDP+FC+Omniglot"
   num-tasks:
     values: [4, 8, 16, 32]
   tau:
@@ -39,6 +58,8 @@ parameters:
   clamp:
     min: 800
     max: 1200
+  gpu:
+    value: "0"
 #  total-num-tasks:
 #    value: 20000
 #  meta-learn:
