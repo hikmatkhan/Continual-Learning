@@ -25,12 +25,13 @@ class Net(nn.Module):
 
         self.fc_init = fc_weight_args(args)
         # Omniglot 256, 128, 64, 64
-        self.fullyCon1 = VDP_FullyConnected(784, 256, input_flag=True, weight_args=self.fc_init)
+        self.fullyCon1 = VDP_FullyConnected(784, 512, input_flag=True, weight_args=self.fc_init)
         # self.fullyCon1 = VDP_FullyConnected(1024, 512, input_flag=True, weight_args=self.fc_init)
         self.relu = VDP_Relu()
         # Added
-        self.fullyCon3 = VDP_FullyConnected(256, 128, weight_args=self.fc_init)
-        self.fullyCon4 = VDP_FullyConnected(128, 64, weight_args=self.fc_init)
+        self.fullyCon3 = VDP_FullyConnected(512, 256, weight_args=self.fc_init)
+        self.fullyCon4 = VDP_FullyConnected(256, 128, weight_args=self.fc_init)
+        self.fullyCon5 = VDP_FullyConnected(128, 64, weight_args=self.fc_init)
         # self.dropout = nn.Dropout(0.25)
 
         self.fullyCon2 = VDP_FullyConnected(64, args.ways, weight_args=self.fc_init)
@@ -45,6 +46,8 @@ class Net(nn.Module):
         mu, sigma = self.fullyCon3.forward(mu, sigma)
         mu, sigma = self.relu.forward(mu, sigma)
         mu, sigma = self.fullyCon4.forward(mu, sigma)
+        mu, sigma = self.relu.forward(mu, sigma)
+        mu, sigma = self.fullyCon5.forward(mu, sigma)
         mu, sigma = self.relu.forward(mu, sigma)
 
         # mu, sigma = self.fullyCon4.forward(mu, sigma)
