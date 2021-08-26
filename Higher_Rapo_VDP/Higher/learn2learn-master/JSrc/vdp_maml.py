@@ -311,14 +311,25 @@ def main(args):
         print("E|{0}| Acc| Train: {1} Val:{2} Test:{3} |   Loss| Train:{4} Val:{5} Test:{6} |".format(iteration,
                                  round(meta_train_accuracy, 2), round(meta_valid_accuracy, 2), round(meta_test_accuracy, 2),
                                  round(meta_train_error, 2), round(meta_valid_error, 2), round(meta_test_error, 2)))
+        if 150 <= iteration <= 200 and meta_valid_accuracy < 0.21:
+            print("Val-Acc Not improving:", meta_valid_accuracy)
+            if args.wandb_log:
+                wandb.log({"meta_train_accuracy": meta_train_accuracy * -10,
+                           "meta_train_loss": meta_train_error * -10,
+                           "meta_valid_accuracy": meta_valid_accuracy * -10,
+                           "meta_valid_loss": meta_valid_error * -10,
+                           "meta_test_accuracy": meta_test_accuracy * -10,
+                           "meta_test_loss": meta_test_error * -10,
+                           })
+            return
 
         if args.wandb_log:
-            wandb.log({"meta_train_accuracy":meta_train_accuracy,
-                       "meta_train_loss":meta_train_error,
-                       "meta_valid_accuracy":meta_valid_accuracy,
-                       "meta_valid_loss":meta_valid_error,
-                        "meta_test_accuracy":meta_test_accuracy,
-                        "meta_test_loss":meta_test_error,
+            wandb.log({"meta_train_accuracy": meta_train_accuracy,
+                       "meta_train_loss": meta_train_error,
+                       "meta_valid_accuracy": meta_valid_accuracy,
+                       "meta_valid_loss": meta_valid_error,
+                        "meta_test_accuracy": meta_test_accuracy,
+                        "meta_test_loss": meta_test_error,
                       })
 
 
