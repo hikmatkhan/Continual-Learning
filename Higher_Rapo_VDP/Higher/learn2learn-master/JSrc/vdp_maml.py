@@ -311,7 +311,7 @@ def main(args):
         print("E|{0}| Acc| Train: {1} Val:{2} Test:{3} |   Loss| Train:{4} Val:{5} Test:{6} |".format(iteration,
                                  round(meta_train_accuracy, 2), round(meta_valid_accuracy, 2), round(meta_test_accuracy, 2),
                                  round(meta_train_error, 2), round(meta_valid_error, 2), round(meta_test_error, 2)))
-        if 200 <= iteration <= 250 and meta_valid_accuracy < 0.21:
+        if iteration >= 200 and iteration <= 250 and meta_valid_accuracy < 0.21:
             print("Val-Acc Not improving:", meta_valid_accuracy)
             if args.wandb_log:
                 wandb.log({"meta_train_accuracy": meta_train_accuracy * -10,
