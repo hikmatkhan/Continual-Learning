@@ -330,7 +330,7 @@ def main(args):
                            "meta_test_accuracy": meta_test_accuracy * -10,
                            "meta_test_loss": meta_test_error * -10,
                            })
-
+            return
 
 if __name__ == '__main__':
     print("CMD Arguments:", args)
