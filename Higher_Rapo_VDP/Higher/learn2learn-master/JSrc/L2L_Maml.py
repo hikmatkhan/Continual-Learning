@@ -142,6 +142,7 @@ def main(args):
     # Create model
     model = l2l.vision.models.OmniglotFC(28 ** 2, args.ways)
     model.to(args.device)
+    print("MAML:", model)
     maml = l2l.algorithms.MAML(model, lr=args.fast_lr, first_order=False)
     opt = optim.Adam(maml.parameters(), args.meta_lr)
     loss = nn.CrossEntropyLoss(reduction='mean')

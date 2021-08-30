@@ -12,6 +12,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
+
+
 def print_arguments(args):
     print('=' * 101)
     print('Arguments =')
@@ -77,7 +79,8 @@ def kde_plot_layers(args, model, epoch, save_path):
             os.makedirs(ss_layer_kde_path)
 
         if 'fc' or 'ful' in layer:
-            mean_df = pd.DataFrame(getattr(model, layer).mean.weight.view(-1, 1).detach().cpu().numpy(), columns=[column_name])
+            mean_df = pd.DataFrame(getattr(model, layer).mean.weight.view(-1, 1).detach().cpu().numpy(),
+                                   columns=[column_name])
             fig = plt.figure()
             sns.kdeplot(mean_df[column_name], shade=True, label=column_name)
             plt.title(layer + ' Mean ' + column_name)
@@ -88,7 +91,8 @@ def kde_plot_layers(args, model, epoch, save_path):
                 wandb.log({f"{layer}_mean_kde": plt})
             plt.close()
 
-            sigma_df = pd.DataFrame(getattr(model, layer).sigma_weight.view(-1, 1).detach().cpu().numpy(), columns=[column_name])
+            sigma_df = pd.DataFrame(getattr(model, layer).sigma_weight.view(-1, 1).detach().cpu().numpy(),
+                                    columns=[column_name])
             fig = plt.figure()
             sns.kdeplot(sigma_df[column_name], shade=True, label=column_name)
             plt.title(layer + ' Sigma ' + column_name)
@@ -99,7 +103,9 @@ def kde_plot_layers(args, model, epoch, save_path):
                 wandb.log({f"{layer}_sigma_kde": plt})
             plt.close()
 
-            ss_df = pd.DataFrame(torch.log1p(torch.exp(getattr(model, layer).sigma_weight.view(-1, 1).detach().cpu())).numpy(), columns=[column_name])
+            ss_df = pd.DataFrame(
+                torch.log1p(torch.exp(getattr(model, layer).sigma_weight.view(-1, 1).detach().cpu())).numpy(),
+                columns=[column_name])
             fig = plt.figure()
             sns.kdeplot(ss_df[column_name], shade=True, label=column_name)
             plt.title(layer + ' SoftPlus Sigma ' + column_name)
@@ -113,7 +119,7 @@ def kde_plot_layers(args, model, epoch, save_path):
             getattr(model, layer).mean.weight.shape
 
 
-#-------------------------------- VDP Maml ----------------------------------_#
+# -------------------------------- VDP Maml ----------------------------------_#
 import random
 
 import learn2learn
@@ -141,12 +147,13 @@ def get_compute_device():
     return device
 
 
-def get_torch_ds(dataset =
-    #              torchvision.datasets.CIFAR10(root="data", train=True, download=True, transform=transforms.Compose(
-    # [transforms.ToTensor(),transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])),
+def get_torch_ds(dataset=
+                 #              torchvision.datasets.CIFAR10(root="data", train=True, download=True, transform=transforms.Compose(
+                 # [transforms.ToTensor(),transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])),
                  torchvision.datasets.MNIST(root="data", train=True,
-                        download=True, transform=transforms.Compose([transforms.ToTensor(),
-                        transforms.Normalize((0.5,), (0.5,))])),
+                                            download=True, transform=transforms.Compose([transforms.ToTensor(),
+                                                                                         transforms.Normalize((0.5,), (
+                                                                                         0.5,))])),
                  ways=10, shots=1, num_tasks=32):
     '''
     # tasksets = utils.get_torch_ds(ways=args.ways, shots=args.shots, num_tasks=args.num_tasks)
@@ -169,9 +176,9 @@ def get_torch_ds(dataset =
 
 def get_l2l_ds(dataset_name, data_path="./data", ways=1, shots=5):
     tasksets = learn2learn.vision.benchmarks.get_tasksets(dataset_name,
-                                                          train_samples=shots*2,  # 2*shots,
+                                                          train_samples=shots * 2,  # 2*shots,
                                                           train_ways=ways,
-                                                          test_samples=shots*2,  # 2*shots,
+                                                          test_samples=shots * 2,  # 2*shots,
                                                           test_ways=ways,
                                                           root=data_path,
                                                           num_tasks=-1)
@@ -252,4 +259,4 @@ def accuracy(predictions, targets):
 #         print("Dataset not found.")
 #
 #     return meta_theta
-#-------------------------------- VDP Maml ----------------------------------_#
+# -------------------------------- VDP Maml ----------------------------------_#

@@ -44,8 +44,8 @@ parser.add_argument('--continue_train', type=bool, default=False, help='Continue
 # Print Parameters
 parser.add_argument('--lightning', type=bool, default=False, help='Run with PyTorch Lightning')
 parser.add_argument('--kdes', type=bool, default=False, help='Plot KDE Plots')
-parser.add_argument('--base_save', type=str, default='../models/network/' + start_date_str + '/' + start_time_str + '/',
-                    help='Where to Save model, network gets replaced with the experiment you run')
+# parser.add_argument('--base_save', type=str, default='../models/network/' + start_date_str + '/' + start_time_str + '/',
+#                     help='Where to Save model, network gets replaced with the experiment you run')
 # Code Parameters
 parser.add_argument('--num_workers', type=int, default=6, help='Number of CPU works to process dataset')
 parser.add_argument('--data_path', type=str, default='../../data/', help='Path to save dataset data')
@@ -130,6 +130,9 @@ model_params.add_argument('--channels', type=int, default=1,
                           help='Input to dimension')
 model_params.add_argument('--fine-tune', type=int, default=0,
                           help='Only meta learn the FC layer')
+import datetime
+model_params.add_argument('--timestamp', type=str, default="{0}.pt".format(datetime.datetime.now()),
+                          help='Save best model with this timestamp.')
 
 # Optimization
 optim_params = parser.add_argument_group('Optimization')
@@ -219,16 +222,27 @@ def main(args):
                                                   root=args.data,
                                                   )
 
-    # Create model
-    # model = l2l.vision.models.OmniglotFC(28 ** 2, args.ways)
+    ##### Create model
+    ##### model = l2l.vision.models.OmniglotFC(28 ** 2, args.ways)
+
     from VDPNet import Net
     model = Net(args).to(args.device)
     print("model:", model)
+    model.load_state_dict(torch.load("./best_models/2021-08-30 11:19:03.139908.pt")["model_state_dict"])
+    print("Model loaded.")
     # model.to(args.device)
     maml = l2l.algorithms.MAML(model, lr=args.fast_lr, first_order=False)
     opt = optim.Adam(maml.parameters(), args.meta_lr)
     loss = nn.CrossEntropyLoss(reduction='mean')
 
+    # jutils.save_best_model(model=model, optimizer=opt, epoch=0, val_loss=0, val_acc=0, path=args.timestamp)
+    # model.load_state_dict(torch.load("model.pt")["model_state_dict"])
+    best_meta_valid_accuracy = 0
+    if args.wandb_log:
+        wandb.log({"best_meta_valid_accuracy": best_meta_valid_accuracy,
+                   "best_model_save_with": args.timestamp})
+
+    # print("Model loaded.")
     for iteration in range(args.epochs):
         opt.zero_grad()
         meta_train_error = 0.0
@@ -311,8 +325,19 @@ def main(args):
         print("E|{0}| Acc| Train: {1} Val:{2} Test:{3} |   Loss| Train:{4} Val:{5} Test:{6} |".format(iteration,
                                  round(meta_train_accuracy, 2), round(meta_valid_accuracy, 2), round(meta_test_accuracy, 2),
                                  round(meta_train_error, 2), round(meta_valid_error, 2), round(meta_test_error, 2)))
-
-        if ((150 <= iteration <= 200) or (2150 <= iteration <= 2200)) and meta_valid_accuracy < 0.21:
+        if best_meta_valid_accuracy < meta_valid_accuracy:
+            print("Best Val Acc:", best_meta_valid_accuracy, " Obtained Val Acc:", meta_valid_accuracy)
+            best_meta_valid_accuracy = meta_valid_accuracy
+            jutils.save_best_model(model=maml.module,
+                                   epoch=iteration,
+                                   meta_train_accuracy=meta_train_accuracy,
+                                   meta_valid_accuracy=meta_valid_accuracy,
+                                   meta_test_accuracy=meta_test_accuracy,
+                                   meta_train_error=meta_train_error,
+                                   meta_valid_error=meta_valid_error,
+                                   meta_test_error=meta_test_error,
+                                   optimizer=opt, path=args.timestamp)
+        if ((100 <= iteration <= 150) or (2100 <= iteration <= 2150)) and meta_valid_accuracy < 0.21:
             print("Val-Acc Not improving:", meta_valid_accuracy)
             if args.wandb_log:
                 wandb.log({"meta_train_accuracy": meta_train_accuracy * -1,
@@ -321,6 +346,8 @@ def main(args):
                            "meta_valid_loss": meta_valid_error * -1,
                            "meta_test_accuracy": meta_test_accuracy * -1,
                            "meta_test_loss": meta_test_error * -1,
+                           "best_meta_valid_accuracy": best_meta_valid_accuracy * -1,
+
                            })
             return
 
@@ -331,6 +358,7 @@ def main(args):
                        "meta_valid_loss": meta_valid_error,
                         "meta_test_accuracy": meta_test_accuracy,
                         "meta_test_loss": meta_test_error,
+                       "best_meta_valid_accuracy": best_meta_valid_accuracy,
                       })
 
 

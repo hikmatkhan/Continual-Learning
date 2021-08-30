@@ -322,7 +322,7 @@ def main(args):
                       })
 
         # if iteration >= 200 and iteration <= 250 and meta_valid_accuracy < 0.21:
-        if ((150 <= iteration <= 200) or (2150 <= iteration <= 2200)) and meta_valid_accuracy < 0.21:
+        if ((100 <= iteration <= 150) or (2100 <= iteration <= 2150)) and meta_valid_accuracy < 0.21:
             print("Val-Acc Not improving:", meta_valid_accuracy)
             if args.wandb_log:
                 wandb.log({"meta_train_accuracy": meta_train_accuracy * -1,

@@ -15,36 +15,36 @@ parameters:
   ways:
     value: 5
   shots:
-    values: [1, 5]
+    values: [1]
   adaptation-steps:
     value: 1
   dataset:
     values: ["omniglot"]
   num-tasks:
     values: [8, 16, 32]
-  total-num-tasks:
-    value: -1
+#  total-num-tasks:
+#    value: -1
   meta-learn:
     value: 1
-  input:
-    value: 28
-  channels:
-    value: 1
+#  input:
+#    value: 28
+#  channels:
+#    value: 1
   model-name:
-    values: ["vanilla", "resnet"]
-  fine-tune:
-    value: 1
-  num-workers:
-    value: 4
-  device:
-    value: "cuda"
+    values: ["vanilla"]#, "resnet"]
+#  fine-tune:
+#    value: 1
+#  num-workers:
+#    value: 4
+#  device:
+#    value: "cuda"
   wand-project:
-    value: "Sweeper"
+    value: "MAML+Higher"
   username:
     value: "hikmatkhan-"
   wandb-log:
     value: 1
   data:
-    value: "./data"
-  num-epochs:
-    value: 5000
+    value: "~/data"
+  epochs:
+    value: 1000

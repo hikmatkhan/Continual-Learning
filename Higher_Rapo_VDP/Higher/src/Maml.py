@@ -11,10 +11,10 @@ from torchvision.models import resnet18
 import utils
 import argparse
 import wandb
-# import os
-# os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-# # For mutliple devices (GPUs: 4, 5, 6, 7)
-# os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+# For mutliple devices (GPUs: 4, 5, 6, 7)
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 from test import run_val_loop, run_test_loop
 from train import run_inner_loop
@@ -26,7 +26,7 @@ general_params.add_argument('--data', type=str, default="./data",
                             help='Path to the folder the data is downloaded to.')
 general_params.add_argument('--dataset', type=str,
                             choices=["omniglot", "mini-imagenet", "fc100",
-                                     "cifarfs", "tiered-imagenet"], default='mini-imagenet',
+                                     "cifarfs", "tiered-imagenet"], default='omniglot',
                             help='Name of the dataset (default: omniglot).')
 # Meta Learning Params
 meta_params = parser.add_argument_group('Meta Learning Parameters')
@@ -38,7 +38,7 @@ meta_params.add_argument('--adaptation-steps', type=int, default=1,
                          help='Number of adaptation steps on meta-train datasets.')
 meta_params.add_argument('--num-tasks', type=int, default=32,
                          help='Number of tasks to sample from task distribution. (Meta batch size)')
-meta_params.add_argument('--total-num-tasks', type=int, default=-1,
+meta_params.add_argument('--total-num-tasks', type=int, default=20000,
                          help='Total number of tasks in task distribution. Always keep it to -1.')
 # meta_params.add_argument('--first-order', action='store_true',
 #                          help='Use the first order approximation, do not use highers-order '
@@ -59,17 +59,17 @@ meta_params.add_argument('--meta-learn', type=int, default=1,
 model_params = parser.add_argument_group('Model')
 model_params.add_argument('--input', type=int, default=84,
                           help='Input to dimension')
-model_params.add_argument('--channels', type=int, default=3,
+model_params.add_argument('--channels', type=int, default=1,
                           help='Input to dimension')
 model_params.add_argument('--model-name', type=str, choices=
-['vanilla', 'lenet', 'mlp', 'senet', 'resnet'], default='resnet',
+['vanilla', 'lenet', 'mlp', 'senet', 'resnet'], default='vanilla',
                           help='Name of the Algorithm (default: maml).')
 model_params.add_argument('--fine-tune', type=int, default=1,
                           help='Only meta learn the FC layer')
 
 # Optimization
 optim_params = parser.add_argument_group('Optimization')
-optim_params.add_argument('--num-epochs', type=int, default=-1,
+optim_params.add_argument('--epochs', type=int, default=1000,
                           help='Number of epochs of meta-training (default: 50000).')
 optim_params.add_argument('--seed', type=int, default=utils.fix_seeds(),
                           help='Number of epochs of meta-training (default: 101).')
@@ -85,7 +85,7 @@ misc.add_argument('--device', type=str, default=utils.get_compute_device(),
 viz = parser.add_argument_group('Misc')
 viz.add_argument('--wand-project', type=str, default="Github_Rapo",
                  help='Wandb project name should go here')
-viz.add_argument('--username', type=str, default="hikmatkhan",
+viz.add_argument('--username', type=str, default="hikmatkhan-",
                  help='Wandb username should go here')
 viz.add_argument('--wandb-log', type=int, default=1,
                  help='If True, Logs will be reported on wandb.')
@@ -113,8 +113,8 @@ if __name__ == '__main__':
         wandb.init(project=args.wand_project, entity=args.username)
         wandb.watch(model, log_freq=10)
     #     wandb.config.update(args)
-    print("Meta_Lr:", args.meta_lr, " Fast_Lr:", args.fast_lr, " Epoch:", args.num_epochs)
-    for e in range(args.num_epochs):
+    print("Meta_Lr:", args.meta_lr, " Fast_Lr:", args.fast_lr, " Epoch:", args.epochs)
+    for e in range(args.epochs):
 
         optim_meta.zero_grad()
         # ----------------------------------- Inner loop -----------------------------------#
