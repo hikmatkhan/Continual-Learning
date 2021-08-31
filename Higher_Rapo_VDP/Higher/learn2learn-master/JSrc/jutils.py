@@ -22,6 +22,14 @@ def get_compute_device():
     return device
 
 
+def add_gaussian_noise(X, mu=0, std=0.01):
+    # noise = np.random.normal(loc=mu, scale=std, size=X.shape)  # (5, 1, 28,28))
+    # print("Noise:", noise.shape)
+    # noisy_x = X + noise
+    # print("Noisy X:", noisy_x.shape)
+    return X + np.random.normal(loc=mu, scale=std, size=X.shape)
+
+
 def init_wandb(args, model=None):
     wandb.init(project=args.wand_project, entity=args.username, reinit=True)
     if model != None:
@@ -30,10 +38,9 @@ def init_wandb(args, model=None):
 
 def save_best_model(model, epoch,
                     meta_train_accuracy, meta_valid_accuracy, meta_test_accuracy,
-                    meta_train_error, meta_valid_error, meta_test_error, optimizer, path):
-
-    if not os.path.exists('best_models'):
-        os.makedirs('best_models')
+                    meta_train_error, meta_valid_error, meta_test_error, optimizer, path, root_folder):
+    if not os.path.exists(root_folder):
+        os.makedirs(root_folder)
 
     torch.save({
         'epoch': epoch,
@@ -45,7 +52,7 @@ def save_best_model(model, epoch,
         "meta_valid_loss": meta_valid_error,
         "meta_test_accuracy": meta_test_accuracy,
         "meta_test_loss": meta_test_error},
-        "best_models/{0}".format(path))  # "model.pt")
+        "{0}/{1}".format(root_folder, path))  # "model.pt")
     print("Best model saved.")
 
 # def load_best_model(path):

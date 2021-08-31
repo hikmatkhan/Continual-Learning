@@ -31,7 +31,7 @@ class Net(nn.Module):
         # Added
         self.fullyCon3 = VDP_FullyConnected(256, 128, weight_args=self.fc_init)
         self.fullyCon4 = VDP_FullyConnected(128, 64, weight_args=self.fc_init)
-        # self.fullyCon5 = VDP_FullyConnected(64, 64, weight_args=self.fc_init)
+        self.fullyCon5 = VDP_FullyConnected(64, 64, weight_args=self.fc_init)
         # self.dropout = nn.Dropout(0.25)
 
         self.fullyCon2 = VDP_FullyConnected(64, args.ways, weight_args=self.fc_init)
@@ -49,8 +49,8 @@ class Net(nn.Module):
         mu, sigma = self.relu.forward(mu, sigma)
 
 
-        # mu, sigma = self.fullyCon5.forward(mu, sigma)
-        # mu, sigma = self.relu.forward(mu, sigma)
+        mu, sigma = self.fullyCon5.forward(mu, sigma)
+        mu, sigma = self.relu.forward(mu, sigma)
 
         mu, sigma = self.fullyCon2.forward(mu, sigma)
         mu, sigma = self.softmax.forward(mu, sigma)
