@@ -22,7 +22,7 @@ import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # For mutliple devices (GPUs: 4, 5, 6, 7)
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # parser = argparse.ArgumentParser('MAML with Higher')
 
@@ -377,7 +377,7 @@ def main(args):
                 round(meta_train_error, 2), round(meta_valid_error, 2), round(meta_test_error, 2),
                 round(noisy_meta_test_accuracies["{0}".format(round(args.snr_min_std, 3))], 2),
                 round(noisy_meta_test_errors["{0}".format(round(args.snr_min_std, 3))], 2)))
-        print("noisy_meta_test_accuracies:", noisy_meta_test_accuracies)
+        # print("noisy_meta_test_accuracies:", noisy_meta_test_accuracies)
 
         if best_meta_valid_accuracy < meta_valid_accuracy and meta_valid_accuracy > 0.6:
             print("Best Val Acc:", best_meta_valid_accuracy, " Obtained Val Acc:", meta_valid_accuracy)
