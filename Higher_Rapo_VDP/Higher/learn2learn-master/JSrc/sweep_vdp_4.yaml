@@ -1,30 +1,27 @@
-
-program: vdp_maml_4.py
+program: vdp_r_maml_4.py
 method: bayes
 metric:
   name: meta_valid_accuracy
   goal: maximize
 parameters:
   meta-lr:
-    min: 0.0001
-    max: 0.1
+    min: 0.00001
+    max: 0.001
   fast-lr:
     min: 0.001
     max: 0.1
-#  optimizer:
-#    values: ["adam", "sgd"]
   ways:
     values: [5]
   shots:
-    values: [5]
+    values: [1]
   adaptation-steps:
-    values: [5]
+    values: [1]
   dataset:
     value: "omniglot"
   vdp:
-    value: "FC+VDP+FC+Omniglot"
+    value: "V2+VDP+L2L+FC+Omniglot"
   num-tasks:
-    values: [4, 8, 16, 32]
+    values: [32]
   tau:
     min: 0.0009
     max: 0.004
@@ -32,33 +29,5 @@ parameters:
     min: 0.0005
     max: 0.005
   clamp:
-    min: 800
-    max: 1200
-  gpu:
-    value: "0"
-#  total-num-tasks:
-#    value: 20000
-#  meta-learn:
-#    value: 1
-#  input:
-#    value: 28
-#  channels:
-#    value: 1
-#  model-name:
-#    values: ["vanilla", "resnet"]
-#  fine-tune:
-#    value: 1
-#  workers:
-#    value: 4
-#  device:
-#    value: "cuda"
-#  wand-project:
-#    value: "Learn2Learn-Omniglot"
-#  username:
-#    value: "hikmatkhan-"
-#  wandb-log:
-#    value: 1
-#  data:
-#    value: "~/data"
-#  epochs:
-#    value: 5000
+    min: 950
+    max: 1050
