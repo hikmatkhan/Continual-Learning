@@ -49,7 +49,46 @@
 # ------------------------------------------------------------------------------ #
 # One shot | One adaptation step | Twenty ways
 # ------------------------------------------------------------------------------ #
+#wandb: Creating sweep from: sweep_vdp_7.yaml
+#wandb: Created sweep with ID: cqhigll6
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/cqhigll6
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/cqhigll6
+#
+#wandb: Creating sweep from: sweep_vdp_6.yaml
+#wandb: Created sweep with ID: r1xgmtcj
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/r1xgmtcj
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/r1xgmtcj
+#
+#wandb: Creating sweep from: sweep_vdp_5.yaml
+#wandb: Created sweep with ID: mh8uicqc
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/mh8uicqc
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/mh8uicqc
+#
+#wandb: Creating sweep from: sweep_vdp_4.yaml
+#wandb: Created sweep with ID: qrd0810w
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/qrd0810w
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/qrd0810w
 
+#wandb: Creating sweep from: sweep_vdp_3.yaml
+#wandb: Created sweep with ID: h9zqd1cx
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/h9zqd1cx
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/h9zqd1cx
+
+#wandb: Creating sweep from: sweep_vdp_1.yaml
+#wandb: Created sweep with ID: pvj5siio
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/pvj5siio
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/pvj5siio
+#
+#
+#wandb: Creating sweep from: sweep_vdp_0.yaml
+#wandb: Created sweep with ID: j8nlb4zm
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/j8nlb4zm
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/j8nlb4zm
+#
+#wandb: Creating sweep from: sweep_vdp.yaml
+#wandb: Created sweep with ID: tg5mjsb3
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/tg5mjsb3
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/tg5mjsb3
 
 # ------------------------------------------------------------------------------ #
 
