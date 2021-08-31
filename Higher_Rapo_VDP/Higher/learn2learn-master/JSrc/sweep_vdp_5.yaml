@@ -11,7 +11,7 @@ parameters:
     min: 0.001
     max: 0.1
   ways:
-    values: [5]
+    values: [20]
   shots:
     values: [1]
   adaptation-steps:
