@@ -104,7 +104,7 @@ meta_params.add_argument('--shots', type=int, default=1,
                          help='Number of training example per class (k in "k-shot", default: 5).')
 meta_params.add_argument('--adaptation-steps', type=int, default=1,
                          help='Number of adaptation steps on meta-train datasets.')
-meta_params.add_argument('--numgitgit  default=32,
+meta_params.add_argument('--num-tasks', type=int, default=32,
                          help='Number of tasks to sample from task distribution. (Meta batch size)')
 meta_params.add_argument('--total-num-tasks', type=int, default=20000,
                          help='Total number of tasks in task distribution. Always keep it to -1.')
