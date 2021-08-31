@@ -2,7 +2,10 @@
 # ------------------------------------------------------------------------------ #
 # One shot | One adaptation step | Five ways
 # ------------------------------------------------------------------------------ #
-
+#wandb: Creating sweep from: sweep.yaml
+#wandb: Created sweep with ID: ar7ad3kp
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/ar7ad3kp
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/ar7ad3kp
 
 
 # ------------------------------------------------------------------------------ #
@@ -22,7 +25,7 @@ metric:
   goal: maximize
 parameters:
   meta-lr:
-    min: 0.00001
+    min: 0.0001
     max: 0.001
   fast-lr:
     min: 0.001
@@ -39,15 +42,7 @@ parameters:
     value: "V2+Maml+L2L+FC+Omniglot"
   num-tasks:
     values: [32]
-  tau:
-    min: 0.0009
-    max: 0.004
-  var-sup:
-    min: 0.0005
-    max: 0.005
-  clamp:
-    min: 950
-    max: 1050
+
 #  total-num-tasks:
 #    value: 20000
 #  meta-learn:
