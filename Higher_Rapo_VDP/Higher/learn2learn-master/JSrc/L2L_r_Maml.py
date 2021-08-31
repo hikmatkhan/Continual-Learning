@@ -313,7 +313,7 @@ def main(args):
                     round(noisy_meta_test_accuracies["{0}".format(round(args.snr_min_std, 3))], 2),
                     round(noisy_meta_test_errors["{0}".format(round(args.snr_min_std, 3))], 2)))
         print("noisy_meta_test_accuracies:", noisy_meta_test_accuracies)
-        if best_meta_valid_accuracy < meta_valid_accuracy:
+        if best_meta_valid_accuracy < meta_valid_accuracy and meta_valid_accuracy > 0.6:
             print("Best Val Acc:", best_meta_valid_accuracy, " Obtained Val Acc:", meta_valid_accuracy)
             best_meta_valid_accuracy = meta_valid_accuracy
             jutils.save_best_model(model=maml.module,

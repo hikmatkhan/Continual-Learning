@@ -3,11 +3,9 @@
 # One shot | One adaptation step | Five ways
 # ------------------------------------------------------------------------------ #
 #wandb: Creating sweep from: sweep.yaml
-#wandb: Created sweep with ID: ar7ad3kp
-#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/ar7ad3kp
-#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/ar7ad3kp
-
-
+#wandb: Created sweep with ID: inpwg7zt
+#wandb: View sweep at: https://wandb.ai/hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/sweeps/inpwg7zt
+#wandb: Run sweep agent with: wandb agent hikmatkhan-/Continual-Learning-Higher_Rapo_VDP_Higher_learn2learn-master_JSrc/inpwg7zt
 # ------------------------------------------------------------------------------ #
 
 # ------------------------------------------------------------------------------ #
