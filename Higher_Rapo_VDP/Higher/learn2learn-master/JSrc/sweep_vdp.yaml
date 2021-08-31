@@ -6,7 +6,7 @@
 
 
 # ------------------------------------------------------------------------------ #
-# Five shot | Five adaptation step | Five ways
+# One shot | One adaptation step | Twenty ways
 # ------------------------------------------------------------------------------ #
 
 
@@ -24,8 +24,6 @@ parameters:
   fast-lr:
     min: 0.001
     max: 0.1
-#  optimizer:
-#    values: ["adam", "sgd"]
   ways:
     values: [5]
   shots:
