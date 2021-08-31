@@ -19,7 +19,7 @@ from torch import nn, optim
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # For mutliple devices (GPUs: 4, 5, 6, 7)
-os.environ["CUDA_VISIBLE_DEVICES"] = "2" # GPU
+os.environ["CUDA_VISIBLE_DEVICES"] = "3" # GPU
 
 parser = argparse.ArgumentParser('MAML with Higher')
 # General
