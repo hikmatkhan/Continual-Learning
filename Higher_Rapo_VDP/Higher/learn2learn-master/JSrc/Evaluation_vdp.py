@@ -132,16 +132,17 @@ model_params.add_argument('--fine-tune', type=int, default=0,
 import datetime
 
 
-model_params.add_argument('--timestamp', type=str, default="2021-08-31 09:49:16.932798.pt",#"{0}.pt".format(datetime.datetime.now()),
+
+model_params.add_argument('--timestamp', type=str, default="2021-08-30 11:57:44.880275.pt",#"{0}.pt".format(datetime.datetime.now()),
                           help='Save best model with this timestamp.')
-model_params.add_argument('--models-folder', type=str, default="maml_models",#"{0}.pt".format(datetime.datetime.now()),
+model_params.add_argument('--models-folder', type=str, default="best_models",#"{0}.pt".format(datetime.datetime.now()),
                           help='Save best model with this timestamp.')
 
-model_params.add_argument('--snr-min-std', type=int, default=0.001,
+model_params.add_argument('--snr-min-std', type=int, default=0.01,
                           help='Std maximium.')
-model_params.add_argument('--snr-max-std', type=int, default=3,
+model_params.add_argument('--snr-max-std', type=int, default=1,
                           help='Std minimium.')
-model_params.add_argument('--snr-steps', type=int, default=0.01,
+model_params.add_argument('--snr-steps', type=int, default=0.1,
                           help='Different values for SNR')
 
 # Optimization
@@ -162,14 +163,14 @@ misc.add_argument('--cuda', type=int, default=1,
 
 # Visualization
 viz = parser.add_argument_group('Wandb')
-viz.add_argument('--wand-project', type=str, default="Eval+MAML+L2L+FC+Omniglot",
+viz.add_argument('--wand-project', type=str, default="Eval+VDP+FC+Omniglot",
                  help='Wandb project name should go here')
 viz.add_argument('--username', type=str, default="hikmatkhan-",
                  help='Wandb username should go here')
 viz.add_argument('--wandb-log', type=int, default=1,
                  help='If True, Logs will be reported on wandb.')
 
-viz.add_argument('--vdp', type=str, default="FC+Robustness+MAML+Omniglot",
+viz.add_argument('--vdp', type=str, default="FC+Robustness+VDP+Omniglot",
                  help='VDP + Dataset information')
 
 viz.add_argument('--gpu', type=str, default="2",
@@ -198,66 +199,54 @@ def fast_adapt(batch, learner, loss, adaptation_steps, shots, ways, device, is_e
     adaptation_data, adaptation_labels = data[adaptation_indices], labels[adaptation_indices]
     evaluation_data, evaluation_labels = data[evaluation_indices], labels[evaluation_indices]
 
-    # # Adapt the model
-    # for step in range(adaptation_steps):
-    #     # train_error = loss(learner(adaptation_data), adaptation_labels)
-    #     mu_y_out, sigma_y_out = learner(adaptation_data)
-    #     prd_loss = loss(mu_y_out, adaptation_labels)
-    #     labels = nn.functional.one_hot(adaptation_labels, list(learner.module.children())[-2].out_features)
-    #     # loss = model.batch_loss(mu_y_out, sigma_y_out, labels)
-    #     b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
-    #     learner.adapt(prd_loss + b_loss)
-
     # Adapt the model
     for step in range(adaptation_steps):
-        train_error = loss(learner(adaptation_data), adaptation_labels)
-        learner.adapt(train_error)
-
-    # valid_accuracy = -1
-    # valid_error = -1
-    # if is_eval_on_noisy is False:
-    #     # Evaluate the adapted model
-    #     # predictions = learner(evaluation_data)
-    #     mu_y_out, sigma_y_out = learner(evaluation_data)
-    #     # valid_error = loss(mu_y_out, evaluation_labels)
-    #     prd_loss = loss(mu_y_out, evaluation_labels)
-    #     labels = nn.functional.one_hot(evaluation_labels, list(learner.module.children())[-2].out_features)
-    #     b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
-    #     valid_accuracy = accuracy(mu_y_out, evaluation_labels)
-    #     valid_error = (b_loss + prd_loss)
+        # train_error = loss(learner(adaptation_data), adaptation_labels)
+        mu_y_out, sigma_y_out = learner(adaptation_data)
+        prd_loss = loss(mu_y_out, adaptation_labels)
+        labels = nn.functional.one_hot(adaptation_labels, list(learner.module.children())[-2].out_features)
+        # loss = model.batch_loss(mu_y_out, sigma_y_out, labels)
+        b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
+        learner.adapt(prd_loss + b_loss)
 
     valid_accuracy = -1
     valid_error = -1
     if is_eval_on_noisy is False:
         # Evaluate the adapted model
-        predictions = learner(evaluation_data)
-        valid_error = loss(predictions, evaluation_labels)
-        valid_accuracy = accuracy(predictions, evaluation_labels)
-
-    # noisy_valid_error = -1
-    # noisy_valid_accuracy = -1
-    # if is_eval_on_noisy is True:
-    #     noisy_evaluation_data = evaluation_data + torch.normal(mean=mu, std=std, size=evaluation_data.shape).to(
-    #         args.device)
-    #     # np.random.normal(loc=mu, scale=std, size=evaluation_data.shape)
-    #     noisy_evaluation_data = noisy_evaluation_data.to(args.device)
-    #     mu_y_out, sigma_y_out = learner(noisy_evaluation_data)
-    #     # valid_error = loss(mu_y_out, evaluation_labels)
-    #     noisy_prd_loss = loss(mu_y_out, evaluation_labels)
-    #     labels = nn.functional.one_hot(evaluation_labels, list(learner.module.children())[-2].out_features)
-    #     b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
-    #     noisy_valid_accuracy = accuracy(mu_y_out, evaluation_labels)
-    #     noisy_valid_error = (b_loss + noisy_prd_loss)
+        # predictions = learner(evaluation_data)
+        mu_y_out, sigma_y_out = learner(evaluation_data)
+        # print("sigma_y_out", sigma_y_out.shape)
+        # valid_error = loss(mu_y_out, evaluation_labels)
+        prd_loss = loss(mu_y_out, evaluation_labels)
+        labels = nn.functional.one_hot(evaluation_labels, list(learner.module.children())[-2].out_features)
+        b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
+        valid_accuracy = accuracy(mu_y_out, evaluation_labels)
+        valid_error = (b_loss + prd_loss)
 
     noisy_valid_error = -1
     noisy_valid_accuracy = -1
     if is_eval_on_noisy is True:
         noisy_evaluation_data = evaluation_data + torch.normal(mean=mu, std=std, size=evaluation_data.shape).to(
             args.device)
-
-        predictions = learner(noisy_evaluation_data)
-        noisy_valid_error = loss(predictions, evaluation_labels)
-        noisy_valid_accuracy = accuracy(predictions, evaluation_labels)
+        # np.random.normal(loc=mu, scale=std, size=evaluation_data.shape)
+        noisy_evaluation_data = noisy_evaluation_data.to(args.device)
+        mu_y_out, sigma_y_out = learner(noisy_evaluation_data)
+        # valid_error = loss(mu_y_out, evaluation_labels)
+        noisy_prd_loss = loss(mu_y_out, evaluation_labels)
+        labels = nn.functional.one_hot(evaluation_labels, list(learner.module.children())[-2].out_features)
+        b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
+        noisy_valid_accuracy = accuracy(mu_y_out, evaluation_labels)
+        noisy_valid_error = (b_loss + noisy_prd_loss)
+        print("*" * 50)
+        print("STD:", std)
+        print("*" * 50)
+        print("VDP one-hot Label:", labels)
+        print("L2L evaluation Label:", evaluation_labels)
+        print("*" * 50)
+        print("Prediction:", mu_y_out)
+        print("*" * 50)
+        print("Sigma:", sigma_y_out)
+        print("*" * 50)
 
     return valid_error, valid_accuracy, noisy_valid_error, noisy_valid_accuracy
 
@@ -277,10 +266,10 @@ def main(args):
                                                   )
 
     ##### Create model
-    model = l2l.vision.models.OmniglotFC(28 ** 2, args.ways).to(args.device)
+    ##### model = l2l.vision.models.OmniglotFC(28 ** 2, args.ways)
 
-    # from VDPNet import Net
-    # model = Net(args).to(args.device)
+    from VDPNet_V1 import Net
+    model = Net(args).to(args.device)
     print("model:", model)
     model.load_state_dict(torch.load("./{0}/{1}".format(args.models_folder, args.timestamp))["model_state_dict"])
     print("Model loaded.")
@@ -394,7 +383,7 @@ def main(args):
 
             noisy_meta_test_accuracies["{0}".format(round(std, 3))] += noisy_evaluation_accuracy.item()
             noisy_meta_test_errors["{0}".format(round(std, 3))] += noisy_evaluation_error.item()
-
+        return
     meta_test_error = meta_test_error / args.num_tasks
     meta_test_accuracy = meta_test_accuracy / args.num_tasks
     for std in np.arange(args.snr_min_std, args.snr_max_std, args.snr_steps):

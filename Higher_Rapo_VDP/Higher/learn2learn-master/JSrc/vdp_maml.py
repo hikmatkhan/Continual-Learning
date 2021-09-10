@@ -56,6 +56,9 @@ parser.add_argument('--batch_size', type=int, default=120, help='Batch size')
 parser.add_argument('--tau', type=float, default=0.002, help='KL Weight Term')
 parser.add_argument('--clamp', type=float, default=1000, help='Clamping')
 parser.add_argument('--var-sup', type=float, default=0.001, help='Loss Variance Bias')
+
+
+parser.add_argument('--sv-eta', type=float, default=0.01, help='Loss Variance Bias')
 # Learning Rate Parameters
 # parser.add_argument('--lr', type=float, default=0.001, help='Learning Rate')
 # parser.add_argument('--lr_sched', type=float, default=[100, 150], help='Learning Rate Scheduler Milestones')
@@ -101,7 +104,7 @@ general_params.add_argument('--dataset', type=str,
 meta_params = parser.add_argument_group('Meta Learning Parameters')
 meta_params.add_argument('--ways', type=int, default=5,
                          help='Number of classes per task (N in "N-way", default: 5).')
-meta_params.add_argument('--shots', type=int, default=5,
+meta_params.add_argument('--shots', type=int, default=1,
                          help='Number of training example per class (k in "k-shot", default: 5).')
 meta_params.add_argument('--adaptation-steps', type=int, default=5,
                          help='Number of adaptation steps on meta-train datasets.')
@@ -174,7 +177,7 @@ def accuracy(predictions, targets):
     return (predictions == targets).sum().float() / targets.size(0)
 
 
-def fast_adapt(batch, learner, loss, adaptation_steps, shots, ways, device):
+def fast_adapt(batch, learner, adaptation_steps, shots, ways, device):
     data, labels = batch
     data, labels = data.to(device), labels.to(device)
 
@@ -190,21 +193,26 @@ def fast_adapt(batch, learner, loss, adaptation_steps, shots, ways, device):
     for step in range(adaptation_steps):
         # train_error = loss(learner(adaptation_data), adaptation_labels)
         mu_y_out, sigma_y_out = learner(adaptation_data)
-        prd_loss = loss(mu_y_out, adaptation_labels)
+        # prd_loss = loss(mu_y_out, adaptation_labels)
+        # prd_loss = loss(mu_y_out=mu_y_out, sigma_y_out=sigma_y_out, )
         labels = nn.functional.one_hot(adaptation_labels, list(learner.module.children())[-2].out_features)
         # loss = model.batch_loss(mu_y_out, sigma_y_out, labels)
         b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
-        learner.adapt(prd_loss+b_loss)
+        # learner.adapt(prd_loss+b_loss)
+        learner.adapt(b_loss)
+
+
 
     # Evaluate the adapted model
     # predictions = learner(evaluation_data)
     mu_y_out, sigma_y_out = learner(evaluation_data)
     # valid_error = loss(mu_y_out, evaluation_labels)
-    prd_loss = loss(mu_y_out, evaluation_labels)
+    # prd_loss = loss(mu_y_out, evaluation_labels)
     labels = nn.functional.one_hot(evaluation_labels, list(learner.module.children())[-2].out_features)
     b_loss = learner.batch_loss(mu_y_out, sigma_y_out, labels)
     valid_accuracy = accuracy(mu_y_out, evaluation_labels)
-    valid_error = (b_loss + prd_loss)
+    # valid_error = (b_loss + prd_loss)
+    valid_error = (b_loss)
 
     return valid_error, valid_accuracy
 
@@ -260,7 +268,8 @@ def main(args):
             batch = tasksets.train.sample()
             evaluation_error, evaluation_accuracy = fast_adapt(batch,
                                                                learner,
-                                                               loss,
+                                                               # loss,
+                                                               # learner.module.nll_gaussian,
                                                                args.adaptation_steps,
                                                                args.shots,
                                                                args.ways,
@@ -274,7 +283,8 @@ def main(args):
             batch = tasksets.validation.sample()
             evaluation_error, evaluation_accuracy = fast_adapt(batch,
                                                                learner,
-                                                               loss,
+                                                               # loss,
+                                                               # learner.module.nll_gaussian,
                                                                args.adaptation_steps,
                                                                args.shots,
                                                                args.ways,
@@ -308,7 +318,8 @@ def main(args):
             batch = tasksets.test.sample()
             evaluation_error, evaluation_accuracy = fast_adapt(batch,
                                                                learner,
-                                                               loss,
+                                                               # loss,
+                                                               # learner.module.nll_gaussian,
                                                                args.adaptation_steps,
                                                                args.shots,
                                                                args.ways,

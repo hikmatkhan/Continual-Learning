@@ -22,6 +22,7 @@ class Net(nn.Module):
         self.tau = args.tau
         self.clamp = args.clamp
         self.var_sup = args.var_sup
+        #Added for SVD
         self.sv_eta = args.sv_eta
 
         self.fc_init = fc_weight_args(args)
@@ -32,7 +33,7 @@ class Net(nn.Module):
         # Added
         self.fullyCon3 = VDP_FullyConnected(256, 128, weight_args=self.fc_init)
         self.fullyCon4 = VDP_FullyConnected(128, 64, weight_args=self.fc_init)
-        self.fullyCon5 = VDP_FullyConnected(64, 64, weight_args=self.fc_init)
+        # self.fullyCon5 = VDP_FullyConnected(64, 64, weight_args=self.fc_init)
         # self.dropout = nn.Dropout(0.25)
 
         self.fullyCon2 = VDP_FullyConnected(64, args.ways, weight_args=self.fc_init)
@@ -50,8 +51,8 @@ class Net(nn.Module):
         mu, sigma = self.relu.forward(mu, sigma)
 
 
-        mu, sigma = self.fullyCon5.forward(mu, sigma)
-        mu, sigma = self.relu.forward(mu, sigma)
+        # mu, sigma = self.fullyCon5.forward(mu, sigma)
+        # mu, sigma = self.relu.forward(mu, sigma)
 
         mu, sigma = self.fullyCon2.forward(mu, sigma)
         mu, sigma = self.softmax.forward(mu, sigma)
@@ -61,30 +62,13 @@ class Net(nn.Module):
     def nll_gaussian(self, y_pred_mean, y_pred_sd, y_test):
         NS = torch.diag(
             torch.ones(list(self.children())[-2].out_features, device=y_pred_sd.device) * torch.tensor(self.var_sup,
-                                                                                                device=y_pred_sd.device))
-        # print("NS:", NS, " Shape:", NS.shape)
-        # U, S, Vh = torch.svd(y_pred_sd)
-        # # print("y_pred_sd:", y_pred_sd.shape)
-        # print("U:", U.shape, " S:", S.shape, " Vh:", Vh.shape)
-        # print("S:", S, " Shape:", S.shape)
-        # print("S Diag", torch.diag(S), " Shape:", torch.diag(S).shape)
-        # print("S > self.sv_eta:", S > self.sv_eta)
-        # U = U[S > self.sv_eta]
-        # print("U:U", U.shape)
-        # Vh = torch.transpose(torch.transpose(Vh, 0, 1)[S > self.sv_eta], 0, 1)
-        # S = S[S > self.sv_eta]
-        # y_pred_sd_inv = torch.mm(torch.mm(U, torch.diag(S)), Vh)
-        # y_pred_sd_inv = torch.matmul(torch.matmul(U, torch.diag(S)), Vh)
 
-
-        y_pred_sd_inv = torch.inverse(y_pred_sd + NS) # SVD
+                                                                                  device=y_pred_sd.device))
+        y_pred_sd_inv = torch.inverse(y_pred_sd + NS)
         mu_ = y_pred_mean - y_test
         mu_sigma = torch.bmm(mu_.unsqueeze(1), y_pred_sd_inv)
         ms = (torch.bmm(mu_sigma, mu_.unsqueeze(2)).squeeze(1) +
               (torch.slogdet(y_pred_sd + NS)[1]).unsqueeze(1)).mean()
-
-        # ms = (torch.bmm(mu_sigma, mu_.unsqueeze(2)).squeeze(1) +
-        #       (torch.slogdet(y_pred_sd)[1]).unsqueeze(1)).mean()
         return ms
 
     def batch_loss(self, output_mean, output_sigma, label):
@@ -93,7 +77,6 @@ class Net(nn.Module):
         loss_value = neg_log_likelihood + (self.tau * self.fullyCon1.kl_loss_term() +
                                            self.tau * self.fullyCon2.kl_loss_term() +
                                            self.tau * self.fullyCon3.kl_loss_term() +
-                                           self.tau * self.fullyCon4.kl_loss_term() +
-                                           self.tau * self.fullyCon5.kl_loss_term())
+                                           self.tau * self.fullyCon4.kl_loss_term())
         return loss_value
 
