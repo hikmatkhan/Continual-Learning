@@ -21,7 +21,7 @@ from torch import nn, optim
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 # For mutliple devices (GPUs: 4, 5, 6, 7)
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 
 
@@ -155,7 +155,7 @@ misc.add_argument('--cuda', type=int, default=1,
 
 # Visualization
 viz = parser.add_argument_group('Wandb')
-viz.add_argument('--wand-project', type=str, default="VDP+L2L+FC+Omniglot",
+viz.add_argument('--wand-project', type=str, default="V3+VDP+L2L+FC+Omniglot",
                  help='Wandb project name should go here')
 viz.add_argument('--username', type=str, default="hikmatkhan-",
                  help='Wandb username should go here')
